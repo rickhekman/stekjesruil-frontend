@@ -1,0 +1,44 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-family: $font-heading;
+    font-weight: 500;
+    font-size: 1.2rem;
+    height: auto;
+    width: 12rem;
+    color: $color-black;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .2s;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    transition: all .1s;
+    outline: none;
+    // Change for the button element
+    border: none;
+    cursor: pointer;
+ 
+  }
+  
+  &--home{
+    background-color: $color-yellow-medium-1;
+  &:hover {
+    background-color: $color-yellow-medium-2;
+    color: $color-white;
+  }
+ }
+   &:hover {
+    color: $color-green-dark-3;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transform: translateY(-2px);
+  }
+
+  &:active{
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transform: translateY(0);
+  }
+ 
+  }
+  

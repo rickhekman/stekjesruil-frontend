@@ -1,11 +1,11 @@
 import React from 'react';
-
+import "./css/style.css"
 
 
 function App() {
   return (
-    <div>
-      <h1>Stekjesruil</h1>
+    <div className="container">
+      <h1 className="heading-primary">Stekjesruil</h1>
     </div>
   );
 }

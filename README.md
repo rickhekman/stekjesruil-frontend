@@ -1,6 +1,8 @@
 
 
-## Stekjesruil App 
+## Stekjesruil App :seedling: 
+
+This is a website for cuttings swapping.
 
 In the project directory, you can run:
 

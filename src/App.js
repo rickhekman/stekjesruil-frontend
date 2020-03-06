@@ -1,12 +1,25 @@
 import React from 'react';
-import "./css/style.css"
+import './css/style.css';
+import Header from './components/Header';
+import Main from './components/Main'
 
 
 function App() {
   return (
-    <div className="container">
-      <h1 className="heading-primary">Stekjesruil</h1>
+    <div>
+
+      <header>
+        <Header />
+      </header>
+
+      <main>
+        <Main />
+      </main>
+
+      <footer>
+      </footer>
     </div>
+
   );
 }
 

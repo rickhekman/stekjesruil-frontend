@@ -19,6 +19,9 @@ html {
   background-color: #fafafa;
   text-decoration: none; }
 
+body {
+  padding: 3rem; }
+
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
@@ -30,33 +33,38 @@ body {
   line-height: 1.7;
   color: #000; }
 
-.heading {
+.heading, .heading:link, .heading:visited {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 1rem;
   text-decoration: none; }
-  .heading-primary {
-    font-size: 4.3rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
-    text-align: left;
-    color: #028c52; }
-  .heading-secondary {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #eee;
-    letter-spacing: 0.1rem; }
-  .heading-main {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #028c52;
-    margin-bottom: 3rem; }
-  .heading-eventslist {
-    text-transform: uppercase;
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #028c52;
-    letter-spacing: 0.2rem; }
+
+.heading--primary {
+  font-size: 4.3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: #028c52;
+  cursor: pointer; }
+
+.heading--secondary {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #eee;
+  letter-spacing: 0.1rem; }
+
+.heading--main {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #028c52;
+  margin-bottom: 3rem; }
+
+.heading--eventslist {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #028c52;
+  letter-spacing: 0.2rem; }
 
 .paragraph {
   font-family: "PT Sans", sans-serif;
@@ -69,6 +77,10 @@ body {
 
 .textarea {
   resize: none; }
+
+.about--description {
+  width: 55rem;
+  height: auto; }
 
 .btn, .btn:link, .btn:visited {
   font-family: "Ubuntu", sans-serif;
@@ -88,9 +100,9 @@ body {
   border: none;
   cursor: pointer; }
 
-.btn--home {
+.btn--yellow {
   background-color: #fad507; }
-  .btn--home:hover {
+  .btn--yellow:hover {
     background-color: #ffd000;
     color: #fff; }
 

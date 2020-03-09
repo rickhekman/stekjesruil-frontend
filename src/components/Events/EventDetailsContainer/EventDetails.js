@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 function EventDetails(props) {
 
-  const { t, event } = props
+  const { t, event, onClick } = props
 
   return (
     <div>
@@ -22,7 +22,8 @@ function EventDetails(props) {
           <p>{event.city}</p>
           <p>{event.country}</p>
           <p>{event.geolocation}</p>
-          <Link to={event.eventurl}><button>{t('event.fb')}</button></Link>
+          {/* <Link to={event.eventurl}><button>{t('event.fb')}</button></Link> */}
+          <button onClick={onClick}>{t('event.fb')}</button>
         </div>
         : 'Event details are loading...'
       }

@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import './i18n'
 import App from './App';
+import { Provider } from 'react-redux'
+import store from './store'
 
 const Loader = () => (
 
@@ -12,10 +14,12 @@ const Loader = () => (
 );
 
 ReactDOM.render(
-  <Suspense fallback={<Loader />}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Suspense>
+  <Provider store={store}>
+    <Suspense fallback={<Loader />}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Suspense>
+  </Provider>
   , document.getElementById('root'));
 

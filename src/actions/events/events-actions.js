@@ -3,9 +3,30 @@ import axios from 'axios'
 const baseUrl = 'http://localhost:4000'
 
 // Create an event
+export const CREATE_EVENT = 'CREATE_EVENT'
 
+export function eventCreate(event) {
+  return {
+    type: CREATE_EVENT,
+    payload: event
+  }
+}
 
+export function createEvent(newEventData) {
+  return async function (dispatch) {
+    try {
+      console.log('NEW EVENT DATA', newEventData)
+      const response = await axios
+        .post(`${baseUrl}/events`, newEventData)
 
+      console.log('RESPONSE DATA???', response)
+      dispatch(eventCreate(response.data))
+
+    } catch (error) {
+      throw error
+    }
+  }
+}
 // Read all events
 export const ALL_EVENTS = 'ALL_EVENTS'
 

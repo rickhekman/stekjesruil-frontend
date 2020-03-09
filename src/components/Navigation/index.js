@@ -23,6 +23,7 @@ class Navigation extends Component {
             <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
           </nav>
           <nav>
+            <Link to="/events/"><button className="btn btn--yellow">Events</button></Link>
             <Link to="/about/"><button className="btn btn--yellow">About</button></Link>
           </nav>
         </div>

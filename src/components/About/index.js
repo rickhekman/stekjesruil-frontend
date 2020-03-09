@@ -11,10 +11,10 @@ class About extends Component {
       <div>
         <div className="about">
           <div>
-            <h1>{t('about-title')}</h1>
+            <h1>{t('about.title')}</h1>
           </div>
           <div className="about--description">
-            <p>{t('about-description')}</p>
+            <p>{t('about.description')}</p>
           </div>
         </div>
 

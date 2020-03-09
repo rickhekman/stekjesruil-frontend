@@ -12,7 +12,14 @@ class Header extends Component {
     return (
       <div>
         <div>
-          <Link to="/"><h1 className="heading--primary">{t('main-title')}</h1></Link>
+          <Link to="/" style={{
+            textDecoration: 'none'
+          }}>
+            <h1 className="heading--primary"
+            >
+              {t('main-title')}
+            </h1>
+          </Link>
         </div>
 
         <div>

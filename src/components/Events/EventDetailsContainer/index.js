@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import EventDetails from './EventDetails';
-import { loadEvent } from '../../../actions/events/events-actions';
+import { loadEvent, deleteEvent } from '../../../actions/events/events-actions';
 
 class EventDetailsContainer extends Component {
 
@@ -29,20 +29,27 @@ class EventDetailsContainer extends Component {
 
 
 
-  onClick() {
+  onClick = () => {
     window.location.assign('http://www.google.com');
+  }
+
+  onDelete = () => {
+    this.props.deleteEvent(this.props.event.id)
+    this.props.history.push('/')
   }
 
   render() {
     // console.log('State eventurl', this.state.eventurl)
-    console.log('Button clicked!', this.onClick)
-    console.log('Event url props test', this.props.event)
+    // console.log('Button clicked!', this.onClick)
+    // console.log('ONDELETE FUNCTION ID', this.props.event.id)
+    // console.log('Event url props test', this.props.event)
 
     return (
       <div>
         <EventDetails
           event={this.props.event}
           onClick={this.onClick}
+          onDelete={this.onDelete}
         />
       </div>
     )
@@ -53,4 +60,4 @@ const mapStateToProps = state => ({
   event: state.event
 })
 
-export default connect(mapStateToProps, { loadEvent })(EventDetailsContainer)
+export default connect(mapStateToProps, { loadEvent, deleteEvent })(EventDetailsContainer)

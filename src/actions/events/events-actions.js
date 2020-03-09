@@ -15,11 +15,10 @@ export function eventCreate(event) {
 export function createEvent(newEventData) {
   return async function (dispatch) {
     try {
-      console.log('NEW EVENT DATA', newEventData)
+
       const response = await axios
         .post(`${baseUrl}/events`, newEventData)
 
-      console.log('RESPONSE DATA???', response)
       dispatch(eventCreate(response.data))
 
     } catch (error) {
@@ -71,6 +70,31 @@ export function loadEvent(id) {
         .get(`${baseUrl}/events/${id}`)
 
       dispatch(oneEvent(response.data))
+
+    } catch (error) {
+      throw error
+    }
+  }
+}
+
+// Delete an event
+export const DELETE_EVENT = 'DELETE_EVENT'
+
+export function deleteEventSucces(event) {
+  return {
+    type: DELETE_EVENT,
+    payload: event
+  }
+}
+
+export function deleteEvent(id) {
+  return async function (dispatch) {
+    try {
+
+      const response = await axios
+        .delete(`${baseUrl}/events/${id}`, id)
+      console.log('Delete response', response)
+      dispatch(deleteEventSucces(response))
 
     } catch (error) {
       throw error

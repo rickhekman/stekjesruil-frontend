@@ -1,10 +1,15 @@
-function reducer(state = {}, action = {}) {
+function reducer(state = {}, action) {
   switch (action.type) {
     case 'ALL_EVENTS':
       return action.payload
     case 'CREATE_EVENT':
-      console.log(`'CREATE_EVENT' ACTION is CREATE NEW EVENT DATA`, action.payload)
       return action.payload
+    case 'DELETE_EVENT':
+      console.log('DELETE_EVENT action event id', action.payload)
+      console.log('Delete state', state)
+      console.log('Delete state events', state.data)
+      // return action.payload
+      return state.data.filter(event => event.id !== action.payload)
     default:
       return state
   }

@@ -4,7 +4,7 @@ import { withTranslation } from 'react-i18next';
 
 function EventDetails(props) {
 
-  const { t, event, onClick } = props
+  const { t, event } = props
 
   return (
     <div>
@@ -23,7 +23,8 @@ function EventDetails(props) {
           <p>{event.country}</p>
           <p>{event.geolocation}</p>
           {/* <Link to={event.eventurl}><button>{t('event.fb')}</button></Link> */}
-          <button onClick={onClick}>{t('event.fb')}</button>
+          <button type="button" onClick={props.onClick}>{t('event.fb')}</button> <br />
+          <button type="button" onClick={props.onDelete}>Delete this event</button>
         </div>
         : 'Event details are loading...'
       }

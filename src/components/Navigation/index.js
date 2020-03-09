@@ -6,7 +6,7 @@ import { withTranslation } from 'react-i18next';
 class Navigation extends Component {
   render() {
 
-    const { i18n } = this.props
+    const { t, i18n } = this.props
 
     // console.log('i18n props test', this.props)
     const changeLanguage = lng => {
@@ -23,8 +23,8 @@ class Navigation extends Component {
             <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
           </nav>
           <nav>
-            <Link to="/events/"><button className="btn btn--yellow">Events</button></Link>
-            <Link to="/about/"><button className="btn btn--yellow">About</button></Link>
+            <Link to="/events/"><button className="btn btn--yellow">{t('navigation.events')}</button></Link>
+            <Link to="/about/"><button className="btn btn--yellow">{t('navigation.about')}</button></Link>
           </nav>
         </div>
 

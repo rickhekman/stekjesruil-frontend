@@ -25,6 +25,8 @@ class Navigation extends Component {
           <nav>
             <Link to="/events/"><button className="btn btn--yellow">{t('navigation.events')}</button></Link>
             <Link to="/about/"><button className="btn btn--yellow">{t('navigation.about')}</button></Link>
+            <Link to="/signup/"><button className="btn btn--yellow">Signup</button></Link>
+            <Link to="/login/"><button className="btn btn--yellow">Login</button></Link>
             <Link to="/create-event/"><button className="btn btn--yellow">Create event</button></Link>
           </nav>
         </div>

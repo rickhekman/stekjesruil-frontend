@@ -43,8 +43,9 @@ export function getAllEvents() {
       const response = await axios
         .get(`${baseUrl}/events`)
 
-
-      dispatch(allEvents(response))
+      const { data } = response
+      const action = allEvents(data)
+      dispatch(action)
 
     } catch (error) {
       throw error
@@ -94,7 +95,7 @@ export function deleteEvent(id) {
       const response = await axios
         .delete(`${baseUrl}/events/${id}`, id)
       console.log('Delete response', response)
-      dispatch(deleteEventSucces(response))
+      dispatch(deleteEventSucces(id))
 
     } catch (error) {
       throw error

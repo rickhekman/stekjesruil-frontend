@@ -52,7 +52,7 @@ export default function EventForm(props) {
         <div>
           <label>Start </label>
           <input
-            type="datetime-local"
+            type="date"
             onChange={onChange}
             name="startdate"
             min={"2016-01-01"}
@@ -60,7 +60,7 @@ export default function EventForm(props) {
           />
           <label>End </label>
           <input
-            type="datetime-local"
+            type="date"
             onChange={onChange}
             name="enddate"
             min={"2016-01-01"}

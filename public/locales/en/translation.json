@@ -12,6 +12,7 @@
     "date": "Date: ",
     "description": "About: ",
     "location": "Location: ",
-    "fb": "Facebook event"
+    "fb": "Facebook event",
+    "website": "Location website"
   }
 }

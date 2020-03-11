@@ -185,4 +185,3 @@ export default function EventForm(props) {
     </div>
   )
 }
-

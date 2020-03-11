@@ -31,6 +31,12 @@ class SignupContainer extends Component {
     })
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.userCreated !== this.props.userCreated) {
+      setTimeout(() => this.props.history.push("/login/"), 1500);
+    }
+  }
+
   render() {
     return (
       <div>

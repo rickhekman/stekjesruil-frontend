@@ -1,9 +1,9 @@
-function reducer(state = {}, action = {}) {
+function reducer(state = { eventCreated: false }, action = {}) {
   switch (action.type) {
     case 'ALL_EVENTS':
       return action.payload
     case 'CREATE_EVENT':
-      return action.payload
+      return { ...state, eventCreated: true }
     case 'DELETE_EVENT':
       // console.log('DELETE_EVENT action event id', action.payload)
       // console.log('Delete state', state)

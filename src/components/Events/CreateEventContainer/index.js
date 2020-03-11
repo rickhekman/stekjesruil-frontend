@@ -47,8 +47,15 @@ class CreateEventContainer extends Component {
     })
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.eventCreated !== this.props.eventCreated) {
+      setTimeout(() => this.props.history.push("/events/"), 1500);
+    }
+  }
+
   render() {
     return (<div>
+      {this.props.eventCreated ? <p>Event created</p> : null}
       <EventForm
         onSubmit={this.onSubmit}
         onChange={this.onChange}
@@ -59,5 +66,10 @@ class CreateEventContainer extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    eventCreated: state.events.eventCreated
+  }
+}
 
-export default connect(null, { createEvent })(CreateEventContainer)
+export default connect(mapStateToProps, { createEvent })(CreateEventContainer)

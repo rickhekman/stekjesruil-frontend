@@ -15,6 +15,7 @@ function EventDetails(props) {
           <p>{t('event.date')}{event.startdate}</p>
           <p>{event.enddate}</p>
           <p>{t('event.description')}{event.description}</p>
+          <button type="button" onClick={props.onWebsiteClick}>{t('event.website')}</button> <br />
           <p>{t('event.location')}{event.locationname}</p>
           <p>{event.address1}</p>
           <p>{event.address2}</p>

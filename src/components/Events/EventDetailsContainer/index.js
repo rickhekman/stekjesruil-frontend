@@ -5,7 +5,6 @@ import { loadEvent, deleteEvent } from '../../../actions/events/events-actions';
 
 class EventDetailsContainer extends Component {
 
-
   componentDidMount() {
     this.props.loadEvent(Number(this.props.match.params.id))
   }
@@ -14,6 +13,7 @@ class EventDetailsContainer extends Component {
     title: '',
     photo: '',
     description: '',
+    website: '',
     startdate: '',
     enddate: '',
     locationname: '',
@@ -22,15 +22,17 @@ class EventDetailsContainer extends Component {
     zipcode: '',
     city: '',
     country: '',
-    geolocation: '',
+    latitude: '',
+    longitude: '',
     eventurl: ''
   }
 
-
-
-
   onClick = () => {
-    window.location.assign('http://www.google.com');
+    window.location.assign(this.props.event.eventurl)
+  }
+
+  onWebsiteClick = () => {
+    window.location.assign(this.props.event.website)
   }
 
   onDelete = () => {
@@ -39,15 +41,12 @@ class EventDetailsContainer extends Component {
   }
 
   render() {
-    // console.log('State eventurl', this.state.eventurl)
-    // console.log('Button clicked!', this.onClick)
-    // console.log('ONDELETE FUNCTION ID', this.props.event.id)
-    // console.log('Event url props test', this.props.event)
 
     return (
       <div>
         <EventDetails
           event={this.props.event}
+          onWebsiteClick={this.onWebsiteClick}
           onClick={this.onClick}
           onDelete={this.onDelete}
         />

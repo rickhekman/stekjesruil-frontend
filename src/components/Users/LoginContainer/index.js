@@ -34,11 +34,11 @@ class LoginContainer extends Component {
     })
   }
 
-  // componentDidUpdate(prevProps) {
-  //   if (prevProps.userLoggedIn !== this.props.userLoggedIn) {
-  //     setTimeout(() => this.props.history.push("/"), 1500);
-  //   }
-  // }
+  componentDidUpdate(prevProps) {
+    if (prevProps.userLoggedIn !== this.props.userLoggedIn) {
+      setTimeout(() => this.props.history.push("/"), 1500);
+    }
+  }
 
   render() {
     return (
@@ -59,7 +59,7 @@ class LoginContainer extends Component {
 
 const mapStateToProps = state => {
   return {
-    userLoggedIn: state.users.data !== null
+    userLoggedIn: state.users.token !== null
   }
 }
 

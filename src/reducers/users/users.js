@@ -1,4 +1,4 @@
-export default (state = { userCreated: false, data: null }, action = {}) => {
+export default (state = { userCreated: false, token: null }, action = {}) => {
   switch (action.type) {
     case 'CREATE_USER':
       return { ...state, userCreated: true }

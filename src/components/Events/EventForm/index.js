@@ -8,6 +8,7 @@ export default function EventForm(props) {
       title,
       photo,
       description,
+      website,
       startdate,
       enddate,
       locationname,
@@ -16,7 +17,8 @@ export default function EventForm(props) {
       zipcode,
       city,
       country,
-      geolocation,
+      latitude,
+      longitude,
       eventurl
     }
   } = props;
@@ -75,6 +77,16 @@ export default function EventForm(props) {
             name="description"
             value={description}
             placeholder="Event description"
+          />
+        </div>
+        <div>
+          <label>Location website </label>
+          <input
+            type="text"
+            onChange={onChange}
+            name="website"
+            value={website}
+            placeholder="Location website"
           />
         </div>
         <div>
@@ -138,13 +150,23 @@ export default function EventForm(props) {
           />
         </div>
         <div>
-          <label>Geolocation </label>
+          <label>Location latitude </label>
           <input
             type="text"
             onChange={onChange}
-            name="geolocation"
-            value={geolocation}
-            placeholder="Geolocation"
+            name="latitude"
+            value={latitude}
+            placeholder="Location latitude"
+          />
+        </div>
+        <div>
+          <label>Location longitude </label>
+          <input
+            type="text"
+            onChange={onChange}
+            name="longitude"
+            value={longitude}
+            placeholder="Location longitude"
           />
         </div>
         <div>
@@ -163,4 +185,3 @@ export default function EventForm(props) {
     </div>
   )
 }
-

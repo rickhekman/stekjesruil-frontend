@@ -13,11 +13,21 @@ export function eventCreate(event) {
 }
 
 export function createEvent(newEventData) {
-  return async function (dispatch) {
+  return async function (dispatch, getState) {
     try {
 
+      const state = getState()
+      const token = state.users.token
+
       const response = await axios
-        .post(`${baseUrl}/events`, newEventData)
+        .post(`${baseUrl}/events`,
+          { newEventData },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          }
+        )
 
       dispatch(eventCreate(response.data))
 

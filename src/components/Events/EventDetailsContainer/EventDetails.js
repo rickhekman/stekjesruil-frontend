@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 function EventDetails(props) {
@@ -15,6 +14,7 @@ function EventDetails(props) {
           <p>{t('event.date')}{event.startdate}</p>
           <p>{event.enddate}</p>
           <p>{t('event.description')}{event.description}</p>
+          <button type="button" onClick={props.onWebsiteClick}>{t('event.website')}</button> <br />
           <p>{t('event.location')}{event.locationname}</p>
           <p>{event.address1}</p>
           <p>{event.address2}</p>
@@ -22,7 +22,6 @@ function EventDetails(props) {
           <p>{event.city}</p>
           <p>{event.country}</p>
           <p>{event.geolocation}</p>
-          {/* <Link to={event.eventurl}><button>{t('event.fb')}</button></Link> */}
           <button type="button" onClick={props.onClick}>{t('event.fb')}</button> <br />
           <button type="button" onClick={props.onDelete}>Delete this event</button>
         </div>
@@ -31,6 +30,5 @@ function EventDetails(props) {
     </div>
   )
 }
-
 
 export default withTranslation()(EventDetails)

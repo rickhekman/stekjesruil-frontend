@@ -6,7 +6,8 @@
   },
   "navigation": {
     "events": "Evenementen",
-    "about": "Over"
+    "about": "Over",
+    "cuttings": "Ruil stekjes"
   },
   "event": {
     "date": "Datum: ",

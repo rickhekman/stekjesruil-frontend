@@ -6,6 +6,7 @@ import EventDetails from '../Events/EventDetailsContainer';
 import CreateEventContainer from '../Events/CreateEventContainer';
 import SignupContainer from '../Users/SignupContainer';
 import LoginContainer from '../Users/LoginContainer';
+import Cuttings from '../Cuttings/CuttingsListContainer';
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
       <Route path="/create-event/" exact component={CreateEventContainer} />
       <Route path="/signup/" exact component={SignupContainer} />
       <Route path="/login/" exact component={LoginContainer} />
+      <Route path="/cuttings/" exact component={Cuttings} />
     </div>
   )
 }

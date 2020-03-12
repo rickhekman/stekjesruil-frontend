@@ -6,7 +6,8 @@
   },
   "navigation": {
     "events": "Events",
-    "about": "About"
+    "about": "About",
+    "cuttings": "Swap cuttings"
   },
   "event": {
     "date": "Date: ",

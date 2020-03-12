@@ -36,6 +36,7 @@ export function createEvent(newEventData) {
     }
   }
 }
+
 // Read all events
 export const ALL_EVENTS = 'ALL_EVENTS'
 

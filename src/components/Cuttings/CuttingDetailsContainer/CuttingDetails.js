@@ -13,7 +13,7 @@ function CuttingDetails(props) {
           <img src={cutting.photo} alt={cutting.name} />
           <p>{cutting.description}</p>
 
-          <button type="button" onClick={props.onDelete}>Delete this post</button>
+          <button type="button" onClick={props.onDelete}>{t('cutting.delete')}</button>
         </div>
         : 'Cutting details are loading...'
       }

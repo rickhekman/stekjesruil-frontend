@@ -4,6 +4,7 @@ const baseUrl = 'http://localhost:4000'
 export const CREATE_CUTTING = 'CREATE_CUTTING'
 export const ALL_CUTTINGS = 'ALL_CUTTINGS'
 export const ONE_CUTTING = 'ONE_CUTTING'
+export const DELETE_CUTTING = 'DELETE_CUTTING'
 
 // Create a cutting
 export function cuttingCreate(cutting) {
@@ -83,6 +84,29 @@ export function loadCutting(id) {
         .get(`${baseUrl}/cuttings/${id}`)
 
       dispatch(oneCutting(response.data))
+
+    } catch (error) {
+      throw error
+    }
+  }
+}
+
+// Delete a cutting
+export function deleteCuttingSucces(cutting) {
+  return {
+    type: DELETE_CUTTING,
+    payload: cutting
+  }
+}
+
+export function deleteCutting(id) {
+  return async function (dispatch) {
+    try {
+
+      const response = await axios
+        .delete(`${baseUrl}/cuttings/${id}`, id)
+
+      dispatch(deleteCuttingSucces(response.id))
 
     } catch (error) {
       throw error

@@ -15,5 +15,8 @@
     "location": "Location: ",
     "fb": "Facebook event",
     "website": "Location website"
+  },
+  "cutting": {
+    "delete": "Delete this cutting"
   }
 }

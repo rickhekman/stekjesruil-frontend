@@ -15,5 +15,8 @@
     "location": "Locatie: ",
     "fb": "Facebook evenement",
     "website": "Locatie website"
+  },
+  "cutting": {
+    "delete": "Verderwijder deze stek"
   }
 }

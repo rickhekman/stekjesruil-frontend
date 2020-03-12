@@ -1,10 +1,12 @@
 import axios from 'axios'
-
 const baseUrl = 'http://localhost:4000'
 
-// Create an event
 export const CREATE_EVENT = 'CREATE_EVENT'
+export const ALL_EVENTS = 'ALL_EVENTS'
+export const ONE_EVENT = 'ONE_EVENT'
+export const DELETE_EVENT = 'DELETE_EVENT'
 
+// Create an event
 export function eventCreate(event) {
   return {
     type: CREATE_EVENT,
@@ -38,8 +40,6 @@ export function createEvent(newEventData) {
 }
 
 // Read all events
-export const ALL_EVENTS = 'ALL_EVENTS'
-
 export function allEvents(events) {
   return {
     type: ALL_EVENTS,
@@ -65,8 +65,6 @@ export function getAllEvents() {
 }
 
 // Read one event
-export const ONE_EVENT = 'ONE_EVENT'
-
 export function oneEvent(event) {
   return {
     type: ONE_EVENT,
@@ -90,8 +88,6 @@ export function loadEvent(id) {
 }
 
 // Delete an event
-export const DELETE_EVENT = 'DELETE_EVENT'
-
 export function deleteEventSucces(event) {
   return {
     type: DELETE_EVENT,
@@ -105,8 +101,8 @@ export function deleteEvent(id) {
 
       const response = await axios
         .delete(`${baseUrl}/events/${id}`, id)
-      console.log('Delete response', response)
-      dispatch(deleteEventSucces(id))
+      // console.log('Delete response', response)
+      dispatch(deleteEventSucces(response.id))
 
     } catch (error) {
       throw error

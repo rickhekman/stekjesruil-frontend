@@ -9,24 +9,6 @@ class EventDetailsContainer extends Component {
     this.props.loadEvent(Number(this.props.match.params.id))
   }
 
-  state = {
-    title: '',
-    photo: '',
-    description: '',
-    website: '',
-    startdate: '',
-    enddate: '',
-    locationname: '',
-    address1: '',
-    address2: '',
-    zipcode: '',
-    city: '',
-    country: '',
-    latitude: '',
-    longitude: '',
-    eventurl: ''
-  }
-
   onClick = () => {
     window.location.assign(this.props.event.eventurl)
   }

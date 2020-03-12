@@ -2,9 +2,10 @@ import axios from 'axios';
 
 const baseUrl = 'http://localhost:4000';
 
-// User signup
 export const CREATE_USER = 'CREATE_USER';
+export const LOGIN_USER = 'LOGIN_USER';
 
+// User signup
 function userSignUp() {
   return {
     type: CREATE_USER
@@ -29,8 +30,6 @@ export function signUp(username, email, password) {
 }
 
 // User login
-export const LOGIN_USER = 'LOGIN_USER'
-
 function loginUser(data) {
   return {
     type: LOGIN_USER,

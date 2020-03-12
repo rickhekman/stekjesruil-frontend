@@ -11,7 +11,8 @@ class About extends Component {
       <div>
         <div className="about">
           <div>
-            <h1>{t('about.title')}</h1>
+            <br />
+            <img src={require('../../img/stekjesruil.jpg')} alt="stekjesruil" />
           </div>
           <div className="about--description">
             <p>{t('about.description')}</p>

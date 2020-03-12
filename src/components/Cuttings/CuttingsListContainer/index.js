@@ -10,7 +10,6 @@ class CuttingsListcontainer extends Component {
 
   render() {
 
-    console.log('GET ALL CUTTING in container', this.props)
     return (
       <div>
         <CuttingsList cuttings={this.props.cuttings} />

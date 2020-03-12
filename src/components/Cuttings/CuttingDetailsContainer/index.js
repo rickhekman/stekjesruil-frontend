@@ -9,10 +9,10 @@ class CuttingDetailsContainer extends Component {
     this.props.loadCutting(Number(this.props.match.params.id))
   }
 
-  // onDelete = () => {
-  //   this.props.deleteEvent(this.props.event.id)
-  //   this.props.history.push('/')
-  // }
+  onDelete = () => {
+    this.props.deleteCutting(this.props.cutting.id)
+    this.props.history.push('/')
+  }
 
   render() {
 
@@ -20,6 +20,7 @@ class CuttingDetailsContainer extends Component {
       <div>
         <CuttingDetails
           cutting={this.props.cutting}
+          onDelete={this.onDelete}
         />
       </div>
     )
@@ -30,4 +31,4 @@ const mapStateToProps = state => ({
   cutting: state.cutting
 })
 
-export default connect(mapStateToProps, { loadCutting })(CuttingDetailsContainer)
+export default connect(mapStateToProps, { loadCutting, deleteCutting })(CuttingDetailsContainer)

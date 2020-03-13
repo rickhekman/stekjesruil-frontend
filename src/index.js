@@ -22,4 +22,3 @@ ReactDOM.render(
     </Suspense>
   </Provider>
   , document.getElementById('root'));
-

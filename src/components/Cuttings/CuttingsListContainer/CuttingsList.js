@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 
-export default function CuttingsList(props) {
+function CuttingsList(props) {
+
+  const { t } = props;
 
   return (
     <div>
       <div>
         <div>
-          <Link to={`/create-cutting/`}><button className="btn btn--yellow">Post your cutting</button></Link>
+          <Link to={`/create-cutting/`}><button className="btn btn--yellow">{t('cutting.create')}</button></Link>
         </div>
       </div>
       <div>
@@ -31,3 +34,5 @@ export default function CuttingsList(props) {
     </div>
   )
 }
+
+export default withTranslation()(CuttingsList)

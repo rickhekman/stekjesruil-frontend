@@ -1,7 +1,10 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
-export default function CuttingForm(props) {
+function CuttingForm(props) {
+
   const {
+    t,
     onChange,
     onSubmit,
     values: {
@@ -14,23 +17,23 @@ export default function CuttingForm(props) {
   return (
     <div>
       <div>
-        <h1>Post your cutting for swapping</h1>
+        <h1>{t('cutting-form.title')}</h1>
       </div>
       <form onSubmit={onSubmit}>
 
         <div>
-          <label>Plant name </label>
+          <label>{t('cutting-form.name')} </label>
           <input
             type="text"
             onChange={onChange}
             name="name"
             value={name}
-            placeholder="Plant name (scientific)"
+            placeholder={t('cutting-form.name-placeholder')}
           />
         </div>
 
         <div>
-          <label>Photo </label>
+          <label>{t('cutting-form.photo')} </label>
           <input
             onChange={onChange}
             name="photo"
@@ -39,17 +42,19 @@ export default function CuttingForm(props) {
           />
         </div>
         <div>
-          <label>Description </label>
+          <label>{t('cutting-form.description')} </label>
           <textarea
             type='text'
             onChange={onChange}
             name="description"
             value={description}
-            placeholder="Description about the cutting"
+            placeholder={t('cutting-form.description-placeholder')}
           />
         </div>
-        <input type="submit" />
+        <input type="submit" value={t('cutting-form.submit')} />
       </form>
     </div>
   )
 }
+
+export default withTranslation()(CuttingForm)

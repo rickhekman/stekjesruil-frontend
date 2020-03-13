@@ -17,6 +17,16 @@
     "website": "Locatie website"
   },
   "cutting": {
+    "create": "Stekje plaatsen",
     "delete": "Verderwijder deze stek"
+  },
+  "cutting-form": {
+    "title": "Plaats hier je stekje om te ruilen",
+    "name": "Plant naam",
+    "name-placeholder": "plant naam (wetenschappelijk)",
+    "photo": "Foto",
+    "description": "Beschrijving",
+    "description-placeholder": "Beschrijving van het stekje",
+    "submit": "Plaats"
   }
 }

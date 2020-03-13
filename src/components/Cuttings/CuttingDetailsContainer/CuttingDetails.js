@@ -2,7 +2,7 @@ import React from 'react';
 import { withTranslation } from 'react-i18next';
 
 function CuttingDetails(props) {
-  console.log('Cutting props', props)
+
   const { t, cutting } = props
 
   return (

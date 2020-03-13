@@ -7,7 +7,7 @@ export default function CuttingsList(props) {
     <div>
       <div>
         <div>
-          <Link to=""><button className="btn btn--yellow">Post your cutting</button></Link>
+          <Link to={`/create-cutting/`}><button className="btn btn--yellow">Post your cutting</button></Link>
         </div>
       </div>
       <div>

@@ -55,8 +55,6 @@ export function getAllCuttings() {
       const response = await axios
         .get(`${baseUrl}/cuttings`)
 
-      console.log('ALL CUTTINGS RESPONSE', response)
-
       const { data } = response
       const action = allCuttings(data)
       dispatch(action)

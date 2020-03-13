@@ -1,7 +1,9 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 function SignupForm(props) {
   const {
+    t,
     onChange,
     onSubmit,
     values: {
@@ -13,45 +15,45 @@ function SignupForm(props) {
 
   return (<div>
     <div>
-      <h1>Create an account</h1>
+      <h1>{t('signup-form.title')}</h1>
     </div>
     <form onSubmit={onSubmit}>
       <div>
-        <label>Username </label>
+        <label>{t('signup-form.username')} </label>
         <input
           type='text'
           onChange={onChange}
           name="name"
           value={name}
-          placeholder="Username"
+          placeholder={t('signup-form.username-placeholder')}
         />
       </div>
       <div>
-        <label>Email </label>
+        <label>{t('signup-form.email')} </label>
         <input
           type='email'
           onChange={onChange}
           name="email"
           value={email}
-          placeholder="Email"
+          placeholder={t('signup-form.email-placeholder')}
         />
       </div>
       <div>
-        <label>Password </label>
+        <label>{t('signup-form.password')} </label>
         <input
           type="password"
           onChange={onChange}
           name="password"
           value={password}
-          placeholder="Password"
+          placeholder={t('signup-form.password-placeholder')}
         />
       </div>
       <div>
-        <input type="submit" />
+        <input type="submit" value={t('signup-form.submit')} />
       </div>
     </form>
   </div>
   )
 }
 
-export default SignupForm
+export default withTranslation()(SignupForm)

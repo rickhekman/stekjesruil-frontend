@@ -7,7 +7,9 @@
   "navigation": {
     "events": "Evenementen",
     "about": "Over",
-    "cuttings": "Ruil stekjes"
+    "cuttings": "Ruil stekjes",
+    "signup": "Inschrijven",
+    "login": "Aanmelden"
   },
   "event": {
     "date": "Datum: ",
@@ -28,5 +30,23 @@
     "description": "Beschrijving",
     "description-placeholder": "Beschrijving van het stekje",
     "submit": "Plaats"
+  },
+  "signup-form": {
+    "title": "Schrijf je in",
+    "username": "Gebruikersnaam",
+    "username-placeholder": "Kies je gebruikersnaam",
+    "email": "E-mail",
+    "email-placeholder": "E-mailadres",
+    "password": "Wachtwoord",
+    "password-placeholder": "Wachtwoord",
+    "submit": "Inschrijven"
+  },
+  "login-form": {
+    "title": "Aanmelden",
+    "email": "E-mail",
+    "email-placeholder": "E-mailadres",
+    "password": "Wachtwoord",
+    "password-placeholder": "Wachtwoord",
+    "submit": "Aanmelden"
   }
 }

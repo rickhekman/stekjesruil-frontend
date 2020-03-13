@@ -17,6 +17,16 @@
     "website": "Location website"
   },
   "cutting": {
+    "create": "Post your cutting",
     "delete": "Delete this cutting"
+  },
+  "cutting-form": {
+    "title": "Post your cutting for swapping",
+    "name": "Plant name",
+    "name-placeholder": "Plant name (scientific)",
+    "photo": "Photo",
+    "description": "Description",
+    "description-placeholder": "Describe your cutting",
+    "submit": "Post"
   }
 }

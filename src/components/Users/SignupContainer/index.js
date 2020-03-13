@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SignupForm from './SignupForm';
-import { signUp } from '../../../actions/users/users-actions'
+import { signUp } from '../../../actions/users/users-actions';
 
 class SignupContainer extends Component {
   state = {

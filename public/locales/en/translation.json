@@ -7,7 +7,9 @@
   "navigation": {
     "events": "Events",
     "about": "About",
-    "cuttings": "Swap cuttings"
+    "cuttings": "Swap cuttings",
+    "signup": "Signup",
+    "login": "Login"
   },
   "event": {
     "date": "Date: ",
@@ -28,5 +30,23 @@
     "description": "Description",
     "description-placeholder": "Describe your cutting",
     "submit": "Post"
+  },
+  "signup-form": {
+    "title": "Create an account",
+    "username": "Username",
+    "username-placeholder": "Choose your username",
+    "email": "Email",
+    "email-placeholder": "Your email address",
+    "password": "Password",
+    "password-placeholder": "Password",
+    "submit": "Create"
+  },
+  "login-form": {
+    "title": "Login",
+    "email": "Email",
+    "email-placeholder": "Email",
+    "password": "Password",
+    "password-placeholder": "Password",
+    "submit": "Login"
   }
 }

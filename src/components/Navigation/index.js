@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+// import SelectLanguage from './SelectLanguage'
 
 class Navigation extends Component {
   render() {
 
     const { t, i18n } = this.props
 
-    // console.log('i18n props test', this.props)
     const changeLanguage = lng => {
       i18n.changeLanguage(lng);
     };
@@ -17,11 +16,17 @@ class Navigation extends Component {
       <div>
         <div>
           <nav>
-            <button onClick={() => changeLanguage('en')} className="btn btn--yellow">EN</button>
+            {/* <SelectLanguage /> */}
+
+            <nav>
+              <button onClick={() => changeLanguage('en')} className="btn btn--yellow">EN</button>
+            </nav>
+            <nav>
+              <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
+            </nav>
+
           </nav>
-          <nav>
-            <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
-          </nav>
+
           <nav>
             <Link to="/events/"><button className="btn btn--yellow">{t('navigation.events')}</button></Link>
             <Link to="/cuttings/"><button className="btn btn--yellow">{t('navigation.cuttings')}</button></Link>

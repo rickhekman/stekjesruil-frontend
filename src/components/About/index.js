@@ -4,7 +4,6 @@ import { withTranslation } from 'react-i18next';
 class About extends Component {
   render() {
 
-    console.log('this props about test', this.props)
     const { t } = this.props
 
     return (

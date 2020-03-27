@@ -1,15 +1,15 @@
-## Stekjesruil App :seedling: 
+# Stekjesruil App :seedling: 
 
 ## What is Stekjesruil?  
 
 > Stekjesruil (translated from Dutch as cuttings swapping).  
-> My passion for plants led me to start organizing ‘Stekjesruil’ events.
-> It is an event to swap plant cuttings, meet like-minded people, share and exchange ideas.
+> My passion for plants led me to start organizing ‘Stekjesruil’ events.<br />
+> It is an event to swap plant cuttings, meet like-minded people, share and exchange ideas.<br />
 > It is organized (almost) every month in different locations in The Hague, The Netherlands.
 
 ## About the app
-This is a web application for cuttings swapping.
-Users will be able to attend events, swap plant cuttings, share ideas and meet up. 
+This is a web application for cuttings swapping.<br />
+Users will be able to attend events, swap plant cuttings, share ideas and meet up.<br />
  [Here you can find](https://github.com/rickhekman/stekjesruil-backend "backend") the backend code of the app.
 
 ### Installation
@@ -22,7 +22,7 @@ $ git clone git@github.com:rickhekman/stekjesruil-frontend.git
 ```
 Install the dependencies and devDependencies and start the server.
 ```sh
-# cd into the frontend directory
+cd into the frontend directory
 $ npm install
 ```
 
@@ -40,15 +40,21 @@ You will also see any lint errors in the console.
 
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [React i18next](https://github.com/i18next/react-i18next) - Internationalization for React
-* [Redux](https://reactjs.org/) - State container for JavaScript apps
+* [Redux](https://redux.js.org/) - State container for JavaScript apps
 * [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js 
 * [Sass](https://sass-lang.com/) - CSS with superpowers
 * [Node sass](https://github.com/sass/node-sass) - Node.js bindings to libsass
 
 
-##### This is version 0.1.0  
-
+#### This is version 0.1.0  
 
 License
 ----
 [Beerware](https://en.wikipedia.org/wiki/Beerware)
+
+## Acknowledgements
+
+* Hat tip to anyone whose code was used.
+* And to all the teachers from Codaisseur Code Academy who guided me to become a better developer. :heart:
+
+

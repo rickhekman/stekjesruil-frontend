@@ -55,6 +55,6 @@ License
 ## Acknowledgements
 
 * Hat tip to anyone whose code was used.
-* And to all the teachers from Codaisseur Code Academy who guided me to become a better developer. :heart:
+* And to all the teachers from [Codaisseur Code Academy](https://codaisseur.com/) who guided me to become a better developer. :heart:
 
 

@@ -1,5 +1,4 @@
-import axios from 'axios'
-const baseUrl = 'http://localhost:4000'
+import axios from '../../axios'
 
 export const CREATE_CUTTING = 'CREATE_CUTTING'
 export const ALL_CUTTINGS = 'ALL_CUTTINGS'
@@ -22,7 +21,7 @@ export function createCutting(newCuttingData) {
       const token = state.users.token
 
       const response = await axios
-        .post(`${baseUrl}/cuttings`,
+        .post(`/cuttings`,
           { newCuttingData },
           {
             headers: {
@@ -53,7 +52,7 @@ export function getAllCuttings() {
 
 
       const response = await axios
-        .get(`${baseUrl}/cuttings`)
+        .get(`/cuttings`)
 
       const { data } = response
       const action = allCuttings(data)
@@ -79,7 +78,7 @@ export function loadCutting(id) {
     try {
 
       const response = await axios
-        .get(`${baseUrl}/cuttings/${id}`)
+        .get(`/cuttings/${id}`)
 
       dispatch(oneCutting(response.data))
 
@@ -102,7 +101,7 @@ export function deleteCutting(id) {
     try {
 
       const response = await axios
-        .delete(`${baseUrl}/cuttings/${id}`, id)
+        .delete(`/cuttings/${id}`, id)
 
       dispatch(deleteCuttingSucces(response.id))
 

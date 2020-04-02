@@ -8,8 +8,8 @@
     "events": "Evenementen",
     "about": "Over",
     "cuttings": "Ruil stekjes",
-    "signup": "Inschrijven",
-    "login": "Aanmelden"
+    "signup": "Aanmelden",
+    "login": "Inloggen"
   },
   "event": {
     "date": "Datum: ",
@@ -32,7 +32,7 @@
     "submit": "Plaats"
   },
   "signup-form": {
-    "title": "Schrijf je in",
+    "title": "Aanmelden",
     "username": "Gebruikersnaam",
     "username-placeholder": "Kies je gebruikersnaam",
     "email": "E-mail",
@@ -42,7 +42,7 @@
     "submit": "Inschrijven"
   },
   "login-form": {
-    "title": "Aanmelden",
+    "title": "Inloggen",
     "email": "E-mail",
     "email-placeholder": "E-mailadres",
     "password": "Wachtwoord",

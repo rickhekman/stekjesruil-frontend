@@ -1,0 +1,4 @@
+.maincolumn {
+  display: grid;
+  grid-template-columns: [main-start] 1fr repeat(8, [maincol-start] minmax(min-content, 14rem) [maincol-end]) 1fr [main-end];
+}

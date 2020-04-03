@@ -7,7 +7,7 @@ class About extends Component {
     const { t } = this.props
 
     return (
-      <div className="about">
+      <div>
         <div>
           <div>
             <br />

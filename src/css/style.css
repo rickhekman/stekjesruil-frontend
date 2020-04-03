@@ -27,8 +27,7 @@ body {
   grid-template-rows: 25vh repeat(2, min-content);
   grid-template-columns: [navigation-start] 20rem [navigation-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
   .container > * {
-    padding: 40px;
-    font-size: 3rem; }
+    padding: 40px; }
 
 body {
   font-weight: 300;
@@ -81,10 +80,6 @@ body {
 .textarea {
   resize: none; }
 
-.about--description {
-  width: 55rem;
-  height: auto; }
-
 .btn, .btn:link, .btn:visited {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
@@ -103,12 +98,6 @@ body {
   border: none;
   cursor: pointer; }
 
-.btn--yellow {
-  background-color: #fad507; }
-  .btn--yellow:hover {
-    background-color: #ffd000;
-    color: #fff; }
-
 .btn:hover {
   color: #616247;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -118,19 +107,32 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.btn--yellow {
+  background-color: #fad507; }
+  .btn--yellow:hover {
+    background-color: #ffd000; }
+
+.btn--green {
+  background-color: #028c52;
+  color: #fff; }
+  .btn--green:hover {
+    background-color: #233d1c;
+    color: #fff; }
+
 .about {
   background-color: yellow;
-  grid-column: full-start / full-end; }
-
-.body {
-  background-color: yellow; }
+  grid-column: maincol-start 1 / maincol-end 8;
+  text-align: center; }
+  .about--description {
+    width: 55rem;
+    height: auto; }
 
 .cuttings {
-  grid-column: center-start / center-end;
+  grid-column: maincol-start 1 / maincol-end 8;
   background-color: indianred; }
 
 .events {
-  grid-column: center-start / center-end;
+  grid-column: maincol-start 1 / maincol-end 8;
   background-color: greenyellow; }
 
 .footer {
@@ -141,10 +143,21 @@ body {
   background-color: blue;
   grid-column: full-start / full-end; }
 
+.maincontent {
+  background-color: khaki;
+  grid-column: full-start / full-end;
+  padding: 0rem;
+  display: grid; }
+
+.maincolumn {
+  display: grid;
+  grid-template-columns: [main-start] 1fr repeat(8, [maincol-start] minmax(min-content, 14rem) [maincol-end]) 1fr [main-end]; }
+
 .navigation {
   background-color: red;
   grid-column: navigation-start / navigation-end;
   grid-row: 1 / -1; }
 
 .users {
-  grid-column: center-start / center-end; }
+  background-color: powderblue;
+  grid-column: maincol-start 3 / maincol-end 6; }

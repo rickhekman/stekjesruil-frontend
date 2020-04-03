@@ -17,7 +17,7 @@ function App() {
         <Header />
       </header>
 
-      <body>
+      <body className="maincontent">
         <Main />
       </body>
 

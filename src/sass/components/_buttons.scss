@@ -19,7 +19,7 @@
     // Change for the button element
     border: none;
     cursor: pointer;
- 
+    
   }
 
   &:hover {
@@ -35,6 +35,8 @@
   
   &--yellow{
     background-color: $color-yellow-medium-1;
+    margin-bottom: 1rem;
+    
   &:hover {
     background-color: $color-yellow-medium-2;
     
@@ -44,13 +46,12 @@
   &--green{
     background-color: $color-green-dark-1;
     color: $color-white;
+    margin-bottom: 1.8rem;
   &:hover {
     background-color: $color-green-dark-4;
     color: $color-white;
   }
  }
 
-   
- 
-  }
+}
   

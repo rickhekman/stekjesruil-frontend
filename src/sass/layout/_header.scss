@@ -1,4 +1,22 @@
 .header {
-  background-color: blue;
+  background-color: $color-grey-light-1; 
   grid-column: full-start / full-end;
+  
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: [header-left]1fr [header-center] 1fr [header-right]1fr;
+  
+  &__logo {
+    grid-column: header-center / header-right;
+    align-self: start;
+    justify-self: center;
+  }
+
+  &__language {
+    grid-column: header-right / header-right;
+    align-self: start;
+    justify-self: end;
+  }
 }

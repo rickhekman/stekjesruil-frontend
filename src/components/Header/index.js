@@ -14,8 +14,8 @@ class Header extends Component {
     };
 
     return (
-      <div>
-        <div>
+      <div className="header-container">
+        <div className="header-container__logo">
           <Link to="/" style={{
             textDecoration: 'none'
           }}>
@@ -29,19 +29,20 @@ class Header extends Component {
         {/* <div className="navigation">
           <Navigation />
         </div> */}
-        <div className="navigation__sub">
-          <div className="languages">
-            {/* <SelectLanguage /> */}
-            <nav>
-              <button onClick={() => changeLanguage('en')} className="btn btn--yellow">EN</button>
-            </nav>
-            <nav>
-              <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
-            </nav>
+        <div className="header-container__language">
+          <div className="navigation__sub">
+            <div className="languages">
+              {/* <SelectLanguage /> */}
+              <nav>
+                <button onClick={() => changeLanguage('en')} className="btn btn--yellow">EN</button>
+              </nav>
+              <nav>
+                <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
+              </nav>
+            </div>
           </div>
-        </div>
-
-      </div>
+        </div >
+      </div >
     )
   }
 }

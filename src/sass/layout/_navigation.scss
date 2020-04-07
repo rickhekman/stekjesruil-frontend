@@ -1,5 +1,5 @@
 .navigation {
-  background-color: red;
+  background-color: $color-grey-light-1; 
   grid-column: navigation-start / navigation-end;
-  grid-row: 1 / -1;
+  grid-row: 1 / 3;
 }

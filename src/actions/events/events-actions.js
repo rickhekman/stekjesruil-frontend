@@ -1,5 +1,4 @@
-import axios from 'axios'
-const baseUrl = 'http://localhost:4000'
+import axios from '../../axios'
 
 export const CREATE_EVENT = 'CREATE_EVENT'
 export const ALL_EVENTS = 'ALL_EVENTS'
@@ -22,7 +21,7 @@ export function createEvent(newEventData) {
       const token = state.users.token
 
       const response = await axios
-        .post(`${baseUrl}/events`,
+        .post(`/events`,
           { newEventData },
           {
             headers: {
@@ -52,7 +51,7 @@ export function getAllEvents() {
     try {
 
       const response = await axios
-        .get(`${baseUrl}/events`)
+        .get(`/events`)
 
       const { data } = response
       const action = allEvents(data)
@@ -77,7 +76,7 @@ export function loadEvent(id) {
     try {
 
       const response = await axios
-        .get(`${baseUrl}/events/${id}`)
+        .get(`/events/${id}`)
 
       dispatch(oneEvent(response.data))
 
@@ -100,8 +99,8 @@ export function deleteEvent(id) {
     try {
 
       const response = await axios
-        .delete(`${baseUrl}/events/${id}`, id)
-      // console.log('Delete response', response)
+        .delete(`/events/${id}`, id)
+
       dispatch(deleteEventSucces(response.id))
 
     } catch (error) {

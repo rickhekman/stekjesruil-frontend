@@ -19,17 +19,10 @@
     // Change for the button element
     border: none;
     cursor: pointer;
- 
+    
   }
-  
-  &--yellow{
-    background-color: $color-yellow-medium-1;
+
   &:hover {
-    background-color: $color-yellow-medium-2;
-    color: $color-white;
-  }
- }
-   &:hover {
     color: $color-green-dark-3;
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
     transform: translateY(-2px);
@@ -39,6 +32,26 @@
     box-shadow: 0 .5rem 1rem rgba($color-black, .15);
     transform: translateY(0);
   }
- 
+  
+  &--yellow{
+    background-color: $color-yellow-medium-1;
+    margin-bottom: 1rem;
+    
+  &:hover {
+    background-color: $color-yellow-medium-2;
+    
   }
+ }
+
+  &--green{
+    background-color: $color-green-dark-1;
+    color: $color-white;
+    margin-bottom: 1.8rem;
+  &:hover {
+    background-color: $color-green-dark-4;
+    color: $color-white;
+  }
+ }
+
+}
   

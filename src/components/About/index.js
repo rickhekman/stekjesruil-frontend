@@ -7,17 +7,14 @@ class About extends Component {
     const { t } = this.props
 
     return (
-      <div>
-        <div className="about">
-          <div>
-            <br />
-            <img src={require('../../img/stekjesruil.jpg')} alt="stekjesruil" />
-          </div>
-          <div className="about--description">
-            <p>{t('about.description')}</p>
-          </div>
+      <div className="aboutcontainer">
+        <div className="aboutcontainer--photo">
+          <br />
+          <img src={require('../../img/stekjesruil.jpg')} alt="stekjesruil" />
         </div>
-
+        <div className="aboutcontainer--description">
+          <p>{t('about.description')}</p>
+        </div>
       </div>
     )
   }

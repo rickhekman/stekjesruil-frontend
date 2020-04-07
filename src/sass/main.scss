@@ -3,6 +3,15 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/about";
 @import "components/buttons";
+@import "components/form";
 
+@import "layout/about";
+@import "layout/cuttings";
+@import "layout/events";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/maincontent";
+@import "layout/maincolumn";
+@import "layout/navigation";
+@import "layout/users";

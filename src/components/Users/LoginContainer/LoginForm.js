@@ -16,25 +16,29 @@ function LoginForm(props) {
     <div>
       <h1>{t('login-form.title')}</h1>
     </div>
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="form">
       <div>
-        <label>{t('login-form.email')} </label>
+        <label for="email">{t('login-form.email')} </label>
         <input
+          id="email"
           type='email'
           onChange={onChange}
           name="email"
           value={email}
           placeholder={t('login-form.email-placeholder')}
+          required
         />
       </div>
       <div>
-        <label>{t('login-form.password')} </label>
+        <label for="password">{t('login-form.password')} </label>
         <input
+          id="password"
           type="password"
           onChange={onChange}
           name="password"
           value={password}
           placeholder={t('login-form.password-placeholder')}
+          required
         />
       </div>
       <div>

@@ -1,6 +1,4 @@
-import axios from 'axios';
-
-const baseUrl = 'http://localhost:4000';
+import axios from '../../axios'
 
 export const CREATE_USER = 'CREATE_USER';
 export const LOGIN_USER = 'LOGIN_USER';
@@ -15,7 +13,7 @@ function userSignUp() {
 export function signUp(username, email, password) {
   return async function (dispatch) {
     try {
-      const response = await axios.post(`${baseUrl}/signup`, {
+      const response = await axios.post(`/signup`, {
         username: username,
         email: email,
         password: password,
@@ -40,7 +38,7 @@ function loginUser(data) {
 export function login(email, password) {
   return async function (dispatch) {
     try {
-      const response = await axios.post(`${baseUrl}/login`, {
+      const response = await axios.post(`/login`, {
         email: email,
         password: password
       })

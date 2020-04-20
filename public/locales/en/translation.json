@@ -1,5 +1,5 @@
 {
-  "main-title": "Cuttings Swapping",
+  "main-title": "Stekjesruil",
   "about": {
     "title": "About",
     "description": "My passion for plants led me to start organizing ‘Stekjesruil’ events. It is an event to swap (plant) cuttings, meet like-minded people and exchange ideas about plants. It is organized every month in different locations in The Hague, The Netherlands. If you have any questions or suggestions regarding ‘Stekjesruil’? Please send a message to: stekjesruil[at]gmail[dot]com"
@@ -19,8 +19,8 @@
     "website": "Location website"
   },
   "cutting": {
-    "create": "Post your cutting",
-    "delete": "Delete this cutting"
+    "create": "Post a cutting",
+    "delete": "Delete cutting"
   },
   "cutting-form": {
     "title": "Post your cutting for swapping",
@@ -48,5 +48,9 @@
     "password": "Password",
     "password-placeholder": "Password",
     "submit": "Login"
+  },
+  "event-form": {
+    "title": "Create a new Stekjesruil event",
+    "submit": "Create event"
   }
 }

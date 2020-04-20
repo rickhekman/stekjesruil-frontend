@@ -2,3 +2,13 @@
   grid-column: maincol-start 1 / maincol-end 8;
   background-color: $color-grey-light-1; ;
 }
+
+
+.eventsform-container {
+  display: grid;
+  grid-template-columns: [eventsform-start] 1fr repeat(8, [eventsform-col-start] minmax(min-content, 14rem) [eventsform-col-end]) 1fr [eventsform-end];
+}
+ 
+.eventsform {
+  grid-column: eventsform-col-start 3 / eventsform-col-start 7;
+}

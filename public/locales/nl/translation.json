@@ -48,5 +48,9 @@
     "password": "Wachtwoord",
     "password-placeholder": "Wachtwoord",
     "submit": "Aanmelden"
+  },
+  "event-form": {
+    "title": "Maak een Stekjesruil event",
+    "submit": "Maak event"
   }
 }

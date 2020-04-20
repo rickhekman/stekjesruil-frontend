@@ -35,20 +35,43 @@
   
   &--yellow{
     background-color: $color-yellow-medium-1;
+    color: $color-black;
     margin-bottom: 1rem;
     
   &:hover {
-    background-color: $color-yellow-medium-2;
-    
+    background-color: $color-yellow-dark-1;
+    color: $color-grey-light-1;
   }
  }
 
   &--green{
     background-color: $color-green-dark-1;
-    color: $color-white;
+    color: $color-grey-light-1;
     margin-bottom: 1.8rem;
   &:hover {
-    background-color: $color-green-dark-4;
+    background-color: $color-green-dark-2;
+    color: $color-white;
+  }
+ }
+
+   &--grey{
+    background-color: $color-grey-light-3;
+    color: $color-grey-light-1;
+    margin-bottom: 1.4rem;
+  &:hover {
+    background-color: $color-grey-dark-1;
+    color: $color-white;
+  }
+ }
+
+   &--form-blue{
+    background-color: $color-blue-light-1;
+    color: $color-grey-light-1;
+    margin-bottom: 1.8rem;
+    padding: 1.3rem 1.4rem;
+    width: 12.5rem;    
+  &:hover {
+    background-color: $color-blue-medium-1;
     color: $color-white;
   }
  }

@@ -5,24 +5,45 @@ $color-primary: #000;
 $color-green-light-1: #00a591;
 $color-green-light-2: #bfd641;
 $color-green-light-3: #cbf13e;
+$color-green-light-4: rgb(141, 255, 121);
 
-$color-green-medium-1: #8d9440;
+$color-blue-green-1: rgb(1, 212, 136);
+$color-blue-green-2:rgb(1, 235, 136);
+$color-blue-green-3:rgb(1, 235, 123);
+$color-blue-green-4:rgb(1, 250, 123);
 
 $color-green-dark-1: #028c52;
-$color-green-dark-2: #006e6d;
-$color-green-dark-3: #616247;
-$color-green-dark-4: #233d1c;
+$color-green-dark-2: rgb(1, 111, 0);
+$color-green-dark-3: rgb(1, 74, 0);
+$color-green-dark-4: rgb(1, 58, 0);
 
 // --Yellow colors:
+$color-yellow-light-3: rgb(253, 219, 24);
+
 $color-yellow-medium-1: rgb(250, 213, 7);
 $color-yellow-medium-2: rgb(255, 208, 0);
 
+$color-yellow-dark-1: rgb(248, 184, 9);
+
+// --Blue colors:
+$color-blue-light-1: rgb(59, 194, 248);
+
+$color-blue-medium-1: rgb(0, 169, 236);
+
+$color-blue-dark-1: rgb(0, 123, 172);
+
+// --Orange colors:
+$color-orange-1: rgb(249, 103, 20);
 
 // --Grey Colors:
 $color-grey-light-1: #fafafa;
 $color-grey-light-2: #eee;
+$color-grey-light-3: rgb(204, 204, 204);
 
-$color-grey-dark-1: #777;
+
+$color-grey-dark-1: rgb(153, 150, 150);
+$color-grey-dark-2: rgb(119, 119, 119);
+$color-grey-dark-3: rgb(66, 66, 66);
 
 // --Black and White:
 $color-white: #fff;

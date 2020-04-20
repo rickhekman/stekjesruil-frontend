@@ -12,39 +12,45 @@ function LoginForm(props) {
     }
   } = props;
 
-  return (<div>
-    <div>
-      <h1>{t('login-form.title')}</h1>
+  return (<div className="logincontainer u-margin-top-medium">
+    <div className="logincontainer__form">
+      <div className="u-margin-bottom-medium">
+        <h2 className="heading--secondary">{t('login-form.title')}</h2>
+      </div>
+      <form onSubmit={onSubmit} className="form">
+
+        <div className="form__group">
+          <label for="email" className="form__label">{t('login-form.email')} </label>
+          <input
+            className="form__input"
+            id="email"
+            type='email'
+            onChange={onChange}
+            name="email"
+            value={email}
+            placeholder={t('login-form.email-placeholder')}
+            required
+          />
+        </div>
+
+        <div className="form__group">
+          <label for="password" className="form__label">{t('login-form.password')} </label>
+          <input
+            className="form__input"
+            id="password"
+            type="password"
+            onChange={onChange}
+            name="password"
+            value={password}
+            placeholder={t('login-form.password-placeholder')}
+            required
+          />
+        </div>
+        <div className="u-margin-top-big">
+          <input type="submit" className="btn btn--form-blue" value={t('login-form.submit')} />
+        </div>
+      </form>
     </div>
-    <form onSubmit={onSubmit} className="form">
-      <div>
-        <label for="email">{t('login-form.email')} </label>
-        <input
-          id="email"
-          type='email'
-          onChange={onChange}
-          name="email"
-          value={email}
-          placeholder={t('login-form.email-placeholder')}
-          required
-        />
-      </div>
-      <div>
-        <label for="password">{t('login-form.password')} </label>
-        <input
-          id="password"
-          type="password"
-          onChange={onChange}
-          name="password"
-          value={password}
-          placeholder={t('login-form.password-placeholder')}
-          required
-        />
-      </div>
-      <div>
-        <input type="submit" value={t('login-form.submit')} />
-      </div>
-    </form>
   </div>
   )
 }

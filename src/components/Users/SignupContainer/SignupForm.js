@@ -13,45 +13,57 @@ function SignupForm(props) {
     }
   } = props;
 
-  return (<div>
-    <div>
-      <h1>{t('signup-form.title')}</h1>
+  return (<div className="signupcontainer u-margin-top-medium">
+    <div className="signupcontainer__form">
+      <div className="u-margin-bottom-medium">
+        <h2 className="heading--secondary">{t('signup-form.title')}</h2>
+      </div>
+      <form onSubmit={onSubmit} className="form">
+        <div className="form__group">
+          <label for="username" className="form__label">{t('signup-form.username')} </label>
+          <input
+            className="form__input"
+            id="username"
+            type='text'
+            onChange={onChange}
+            name="name"
+            value={name}
+            placeholder={t('signup-form.username-placeholder')}
+            required
+          />
+        </div>
+        <div className="form__group">
+          <label for="email" className="form__label">{t('signup-form.email')} </label>
+          <input
+            className="form__input"
+            id="email"
+            type='email'
+            onChange={onChange}
+            name="email"
+            value={email}
+            placeholder={t('signup-form.email-placeholder')}
+            required
+          />
+        </div>
+        <div className="form__group">
+          <label for="password" className="form__label">{t('signup-form.password')} </label>
+          <input
+            className="form__input"
+            id="password"
+            type="password"
+            onChange={onChange}
+            name="password"
+            value={password}
+            placeholder={t('signup-form.password-placeholder')}
+            required
+          />
+        </div>
+        <div className="u-margin-top-big">
+          <input type="submit" className="btn btn--form-blue" value={t('signup-form.submit')} />
+        </div>
+      </form>
     </div>
-    <form onSubmit={onSubmit}>
-      <div>
-        <label>{t('signup-form.username')} </label>
-        <input
-          type='text'
-          onChange={onChange}
-          name="name"
-          value={name}
-          placeholder={t('signup-form.username-placeholder')}
-        />
-      </div>
-      <div>
-        <label>{t('signup-form.email')} </label>
-        <input
-          type='email'
-          onChange={onChange}
-          name="email"
-          value={email}
-          placeholder={t('signup-form.email-placeholder')}
-        />
-      </div>
-      <div>
-        <label>{t('signup-form.password')} </label>
-        <input
-          type="password"
-          onChange={onChange}
-          name="password"
-          value={password}
-          placeholder={t('signup-form.password-placeholder')}
-        />
-      </div>
-      <div>
-        <input type="submit" value={t('signup-form.submit')} />
-      </div>
-    </form>
+
   </div>
   )
 }

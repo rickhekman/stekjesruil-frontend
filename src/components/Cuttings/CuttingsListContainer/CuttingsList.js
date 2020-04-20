@@ -7,13 +7,11 @@ function CuttingsList(props) {
   const { t } = props;
 
   return (
-    <div>
-      <div>
-        <div>
-          <Link to={`/create-cutting/`}><button className="btn btn--yellow">{t('cutting.create')}</button></Link>
-        </div>
+    <div className="cuttingslist">
+      <div className="cuttingslist__button">
+        <Link to={`/create-cutting/`}><button className="btn btn--form-blue">{t('cutting.create')}</button></Link>
       </div>
-      <div>
+      <div className="cuttingslist__content">
         <ul>
           {props.cuttings.cuttingsList
             ? props.cuttings.cuttingsList.map(

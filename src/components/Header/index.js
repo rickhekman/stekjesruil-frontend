@@ -34,10 +34,10 @@ class Header extends Component {
             <div className="languages">
               {/* <SelectLanguage /> */}
               <nav>
-                <button onClick={() => changeLanguage('en')} className="btn btn--yellow">EN</button>
+                <button onClick={() => changeLanguage('en')} className="btn btn--grey">EN</button>
               </nav>
               <nav>
-                <button onClick={() => changeLanguage('nl')} className="btn btn--yellow">NL</button>
+                <button onClick={() => changeLanguage('nl')} className="btn btn--grey">NL</button>
               </nav>
             </div>
           </div>

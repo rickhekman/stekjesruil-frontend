@@ -39,7 +39,7 @@ body {
   text-decoration: none; }
 
 .heading--primary {
-  font-size: 4.3rem;
+  font-size: 5.3rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-align: center;
@@ -47,9 +47,9 @@ body {
   cursor: pointer; }
 
 .heading--secondary {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #eee;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #999696;
   letter-spacing: 0.1rem; }
 
 .heading--main {
@@ -78,6 +78,33 @@ body {
 .textarea {
   resize: none; }
 
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem !important; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 3rem !important; }
+
+.u-margin-top-big {
+  margin-top: 6rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 8rem !important; }
+
 .btn, .btn:link, .btn:visited {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
@@ -97,7 +124,7 @@ body {
   cursor: pointer; }
 
 .btn:hover {
-  color: #616247;
+  color: #014a00;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -107,17 +134,69 @@ body {
 
 .btn--yellow {
   background-color: #fad507;
+  color: #000;
   margin-bottom: 1rem; }
   .btn--yellow:hover {
-    background-color: #ffd000; }
+    background-color: #f8b809;
+    color: #fafafa; }
 
 .btn--green {
   background-color: #028c52;
-  color: #fff;
+  color: #fafafa;
   margin-bottom: 1.8rem; }
   .btn--green:hover {
-    background-color: #233d1c;
+    background-color: #016f00;
     color: #fff; }
+
+.btn--grey {
+  background-color: #cccccc;
+  color: #fafafa;
+  margin-bottom: 1.4rem; }
+  .btn--grey:hover {
+    background-color: #999696;
+    color: #fff; }
+
+.btn--form-blue {
+  background-color: #3bc2f8;
+  color: #fafafa;
+  margin-bottom: 1.8rem;
+  padding: 1.3rem 1.4rem;
+  width: 12.5rem; }
+  .btn--form-blue:hover {
+    background-color: #00a9ec;
+    color: #fff; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #424242;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  background-color: rbga(#fff, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 80%;
+  display: block;
+  letter-spacing: 0.1rem; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #01eb88; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #f96714; }
+  .form__input::-webkit-input-placeholder {
+    color: #999696; }
+
+.form__label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 2rem;
+  margin-bottom: .7rem;
+  display: block;
+  letter-spacing: 0.1rem; }
 
 .about {
   background-color: #fafafa;
@@ -135,9 +214,43 @@ body {
   grid-column: maincol-start 1 / maincol-end 8;
   background-color: #fafafa; }
 
+.cuttingslist {
+  display: grid;
+  grid-template-columns: [cuttingslist-start] 1fr repeat(8, [cuttingslist-col-start] minmax(min-content, 14rem) [cuttingslist-col-end]) 1fr [cuttingslist-end]; }
+  .cuttingslist__button {
+    grid-column: cuttingslist-col-start 8 / cuttingslist-col-end 8;
+    justify-self: right; }
+  .cuttingslist__content {
+    grid-column: cuttingslist-col-start 1 / cuttingslist-col-end 8; }
+
+.cuttingsform-container {
+  display: grid;
+  grid-template-columns: [cuttingsform-start] 1fr repeat(8, [cuttingsform-col-start] minmax(min-content, 14rem) [cuttingsform-col-end]) 1fr [cuttingsform-end]; }
+
+.cuttingsform {
+  grid-column: cuttingsform-col-start 3 / cuttingsform-col-start 7; }
+
+.createcuttings {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 65%, transparent 90%), url("../img/stekjes-01.jpg");
+  background-size: cover;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  height: 59rem;
+  width: 80rem; }
+  .createcuttings__form {
+    height: 50%;
+    padding: 4rem  0rem  0rem  9rem; }
+
 .events {
   grid-column: maincol-start 1 / maincol-end 8;
   background-color: #fafafa; }
+
+.eventsform-container {
+  display: grid;
+  grid-template-columns: [eventsform-start] 1fr repeat(8, [eventsform-col-start] minmax(min-content, 14rem) [eventsform-col-end]) 1fr [eventsform-end]; }
+
+.eventsform {
+  grid-column: eventsform-col-start 3 / eventsform-col-start 7; }
 
 .footer {
   background-color: #fafafa;
@@ -178,3 +291,27 @@ body {
 .users {
   background-color: #fafafa;
   grid-column: maincol-start 3 / maincol-end 6; }
+
+.signupcontainer {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.91) 0%, rgba(255, 255, 255, 0.91) 65%, transparent 90%), url("../img/stekjesruilers-02.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  height: 56rem;
+  width: 60rem; }
+  .signupcontainer__form {
+    height: 50%;
+    padding: 4rem  0rem  0rem  9rem; }
+
+.logincontainer {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 95%), url("../img/stekjesruilers-04.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  height: 43rem;
+  width: 55rem; }
+  .logincontainer__form {
+    height: 50%;
+    padding: 3.5rem  0rem  0rem  9rem; }

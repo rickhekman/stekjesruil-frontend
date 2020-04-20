@@ -1,4 +1,42 @@
 .cuttings {
   grid-column: maincol-start 1 / maincol-end 8;
-  background-color: $color-grey-light-1; ;
+  background-color: $color-grey-light-1;  
+}
+
+.cuttingslist {
+   display: grid;
+   grid-template-columns: [cuttingslist-start] 1fr repeat(8, [cuttingslist-col-start] minmax(min-content, 14rem) [cuttingslist-col-end]) 1fr [cuttingslist-end];
+   &__button {
+    grid-column: cuttingslist-col-start 8 / cuttingslist-col-end 8;
+    justify-self: right;
+  }
+  &__content {
+    grid-column: cuttingslist-col-start 1 / cuttingslist-col-end 8;
+  }
+}
+
+.cuttingsform-container {
+  display: grid;
+  grid-template-columns: [cuttingsform-start] 1fr repeat(8, [cuttingsform-col-start] minmax(min-content, 14rem) [cuttingsform-col-end]) 1fr [cuttingsform-end];
+}
+ 
+.cuttingsform {
+  grid-column: cuttingsform-col-start 3 / cuttingsform-col-start 7;
+}
+
+.createcuttings {
+  background-image: linear-gradient(rgba($color-white, .85) 0%, 
+                                    rgba($color-white, .85) 65%, 
+                                  transparent 90%),
+                                  url('../img/stekjes-01.jpg');
+  background-size: cover;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, .15);
+  height: 59rem;
+  width: 80rem;
+
+  &__form {
+    height: 50%;
+    padding: 4rem  0rem  0rem  9rem;
+  }
 }

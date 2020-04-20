@@ -10,11 +10,7 @@ class CuttingsListcontainer extends Component {
 
   render() {
 
-    return (
-      <div>
-        <CuttingsList cuttings={this.props.cuttings} />
-      </div>
-    )
+    return (<CuttingsList cuttings={this.props.cuttings} />)
   }
 }
 

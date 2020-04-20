@@ -2,3 +2,37 @@
   background-color: $color-grey-light-1; 
   grid-column: maincol-start 3 / maincol-end 6;
 }
+
+.signupcontainer {
+  background-image: linear-gradient(rgba($color-white, .91) 0%, 
+                                    rgba($color-white, .91) 65%, 
+                                  transparent 90%),
+                                  url('../img/stekjesruilers-02.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, .15);
+  height: 56rem;
+  width: 60rem;
+  &__form {
+     height: 50%;
+    padding: 4rem  0rem  0rem  9rem;
+  }
+}
+
+.logincontainer {
+  background-image: linear-gradient(rgba($color-white, .9) 0%, 
+                                    rgba($color-white, .9) 65%, 
+                                  transparent 95%),
+                                  url('../img/stekjesruilers-04.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, .15);
+  height: 43rem;
+  width: 55rem;
+  &__form {
+     height: 50%;
+    padding: 3.5rem  0rem  0rem  9rem;
+  }
+}

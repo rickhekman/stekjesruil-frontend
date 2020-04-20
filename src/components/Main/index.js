@@ -12,7 +12,7 @@ import CreateCutting from '../Cuttings/CreateCuttingContainer';
 
 function Main() {
   return (
-    <div className="maincolumn">
+    <div className="maincolumn u-margin-top-medium">
       <div className="events">
         <Route path="/events/" exact component={Events} />
         <Route path="/events/:id" exact component={EventDetails} />
@@ -26,7 +26,7 @@ function Main() {
       <div className="about">
         <Route path="/about/" exact component={About} />
       </div>
-      <div className="users">
+      <div className="users u-margin-top-small">
         <Route path="/signup/" exact component={SignupContainer} />
         <Route path="/login/" exact component={LoginContainer} />
       </div>

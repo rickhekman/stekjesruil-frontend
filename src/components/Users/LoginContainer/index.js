@@ -38,7 +38,7 @@ class LoginContainer extends Component {
     return (
       <div>
         {this.props.userLoggedIn ? (
-          <p>You are logged in!</p>
+          <h3 className="heading--loginfeedback">You are logged in!</h3>
         ) : (
             <LoginForm
               onChange={this.onChange}

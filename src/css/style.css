@@ -66,6 +66,14 @@ body {
   color: #028c52;
   letter-spacing: 0.2rem; }
 
+.heading--loginfeedback {
+  background-color: #01eb88;
+  color: #fafafa;
+  border-radius: 1.5rem;
+  font-size: 3rem;
+  width: fit-content;
+  padding: 0.8rem; }
+
 .paragraph {
   font-family: "PT Sans", sans-serif;
   font-size: 1.6rem;

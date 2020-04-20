@@ -6,7 +6,7 @@ export default function EventsList(props) {
   return (
     <div>
       <div>
-        <Link to="/create-event/"><button className="btn btn--yellow">Create event</button></Link>
+        <Link to="/create-event/"><button className="btn btn--form-blue">Create event</button></Link>
       </div>
       <div>
         <ul>

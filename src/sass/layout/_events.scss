@@ -1,8 +1,57 @@
 .events {
   grid-column: maincol-start 1 / maincol-end 8;
-  background-color: $color-grey-light-1; ;
+  background-color: $color-grey-light-1;
+
+    &--list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 8rem;
+    margin: 1rem;
+
+     &__button {
+      background-color: $color-grey-light-1;
+      margin: 1rem;
+      grid-column: 3 / 4;
+      justify-self: right;
+      align-self: end;
+  }
+  }
 }
 
+.event {
+  padding: 0rem 0rem;
+  box-shadow: 0 0.3rem 0.5rem rgba($color-black, .10);
+  border-radius: 1rem;
+  background-color: $color-grey-light-2; 
+  height: auto;
+  text-align: center;
+
+  &--name {
+    font-size: 2.4rem;
+    color: $color-grey-dark-1;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    // text-align: center;
+  }
+  &--photo {
+    border-radius: 0.5rem;
+    height: auto;
+    width: 35rem;
+    margin-top: 0rem;
+    
+  }
+   &--date {
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    color: $color-grey-dark-1;
+  }
+  &:hover {
+    background-color: rgba($color-green-light-4, .10);
+    transform: translateY(-2px);
+  }
+
+}
 
 .eventsform-container {
   display: grid;

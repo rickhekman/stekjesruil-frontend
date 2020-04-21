@@ -1,18 +1,43 @@
 .cuttings {
   grid-column: maincol-start 1 / maincol-end 8;
   background-color: $color-grey-light-1;  
+
+  &--list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem 4rem;
+    margin: 1rem;
+
+     &__button {
+      background-color: $color-grey-light-1;
+      margin: 1rem;
+      grid-column: 4 /  5;
+      justify-self: right;
+      align-self: end;
+  }
+  }
 }
 
-.cuttingslist {
-   display: grid;
-   grid-template-columns: [cuttingslist-start] 1fr repeat(8, [cuttingslist-col-start] minmax(min-content, 14rem) [cuttingslist-col-end]) 1fr [cuttingslist-end];
-   &__button {
-    grid-column: cuttingslist-col-start 8 / cuttingslist-col-end 8;
-    justify-self: right;
+.cutting {
+  padding: 1rem 3rem;
+  box-shadow: 0 0.3rem 0.5rem rgba($color-black, .10);
+  border-radius: 1rem;
+  background-color: $color-grey-light-2; 
+  &--name {
+    font-size: 1.6rem;
+    color: $color-grey-dark-3;
+    font-weight: 400;
   }
-  &__content {
-    grid-column: cuttingslist-col-start 1 / cuttingslist-col-end 8;
+  &--photo {
+    height: auto;
+    width: 20rem;
+    margin-top: 1rem;
   }
+  &:hover {
+    background-color: rgba($color-green-light-4, .10);
+    transform: translateY(-2px);
+  }
+
 }
 
 .cuttingsform-container {

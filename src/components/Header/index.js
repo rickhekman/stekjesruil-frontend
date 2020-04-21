@@ -33,11 +33,12 @@ class Header extends Component {
           <div className="navigation__sub">
             <div className="languages">
               {/* <SelectLanguage /> */}
+
               <nav>
-                <button onClick={() => changeLanguage('en')} className="btn btn--grey">EN</button>
+                <button onClick={() => changeLanguage('en')} className="btn btn--grey">English</button>
               </nav>
               <nav>
-                <button onClick={() => changeLanguage('nl')} className="btn btn--grey">NL</button>
+                <button onClick={() => changeLanguage('nl')} className="btn btn--grey">Dutch</button>
               </nav>
             </div>
           </div>

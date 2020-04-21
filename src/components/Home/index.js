@@ -1,13 +1,14 @@
 import React from 'react'
 import { withTranslation } from 'react-i18next';
 
-function Home() {
+function Home(props) {
 
-  const { t } = this.props
+  const { t } = props
 
   return (
-    <div>
-      <h1>HOME</h1>
+    <div className="u-center-text">
+      <img src={require('../../img/stekjesruil-02.jpg')} alt="homephoto" />
+      <h2 className="heading--home-subtitle">{t('home.subtitle')}</h2>
     </div>
   )
 }

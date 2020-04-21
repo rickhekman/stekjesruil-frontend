@@ -15,7 +15,7 @@ function CuttingForm(props) {
   } = props;
 
   return (<div className="cuttingsform-container">
-    <div className="cuttingsform u-margin-top-medium">
+    <div className="cuttingsform u-margin-bottom-medium">
       <div className="createcuttings">
         <div className="createcuttings__form">
 
@@ -23,7 +23,7 @@ function CuttingForm(props) {
             <h2 className="heading--secondary">{t('cutting-form.title')}</h2>
           </div>
 
-          <form onSubmit={onSubmit} className="form">
+          <form onSubmit={onSubmit} className="form" >
 
             <div className="form__group">
               <label for="name" className="form__label">{t('cutting-form.name')} </label>

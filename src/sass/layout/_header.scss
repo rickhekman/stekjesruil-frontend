@@ -1,22 +1,29 @@
 .header {
   background-color: $color-grey-light-1; 
-  grid-column: full-start / full-end;
-  
+  grid-column: navigation-start / full-end;
+  padding: 2rem;
+
+  &--container {
+   display: grid;
+   grid-template-columns: [header-left] 1fr [header-center] 1fr [header-right] 1fr;
+
+    &__nav {
+      grid-column: header-left / header-center;
+      align-self: start;
+    }
+
+    &__logo {
+      grid-column: header-center / header-center;
+      align-self: start;
+      justify-self: center;
+    }
+
+    &__language {
+      grid-column: header-right / header-right;
+      align-self: start;
+      justify-self: end;
+    } 
+ 
 }
-
-.header-container {
-  display: grid;
-  grid-template-columns: [header-left]1fr [header-center] 1fr [header-right]1fr;
   
-  &__logo {
-    grid-column: header-center / header-right;
-    align-self: start;
-    justify-self: center;
-  }
-
-  &__language {
-    grid-column: header-right / header-right;
-    align-self: start;
-    justify-self: end;
-  }
 }

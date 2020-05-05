@@ -1,28 +1,27 @@
 import React from 'react';
-import './css/style.css';
-import Navigation from './components/Navigation';
 import Header from './components/Header';
-import Main from './components/Main'
-
+import Main from './components/Main';
+import Footer from './components/Footer';
+import './css/style.css';
 
 function App() {
-  return (
-    <div className="container">
 
-      <div className="navigation">
-        <Navigation />
-      </div>
+  return (
+
+    <div className="container">
 
       <header className="header">
         <Header />
       </header>
 
-      <body className="maincontent">
+      <main className="maincontent">
         <Main />
-      </body>
+      </main>
 
       <footer className="footer">
+        <Footer />
       </footer>
+
     </div>
 
   );

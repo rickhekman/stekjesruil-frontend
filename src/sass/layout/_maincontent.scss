@@ -1,7 +1,4 @@
 .maincontent {
   background-color: $color-grey-light-1; 
-  grid-column: full-start / full-end;
-  padding: 0rem;
-  display: grid;
-
+  grid-column: navigation-start / full-end;
 }

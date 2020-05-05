@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function EventsList(props) {
+function EventsList(props) {
 
   return (
     <div className="events--list u-margin-top-big">
@@ -28,3 +28,5 @@ export default function EventsList(props) {
     </div>
   )
 }
+
+export default EventsList;

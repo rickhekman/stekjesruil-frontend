@@ -1,5 +1,11 @@
 .footer {
   background-color: $color-grey-light-1; 
   grid-column: navigation-start / full-end;
-  height: 15rem;
+  height: 8rem;
+
+  margin-top: 5rem;
+  position: relative;
+  left:0;
+  bottom:0;
+  right:0;
 }

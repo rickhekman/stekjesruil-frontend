@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import CuttingDetails from './CuttingDetails';
 import { loadCutting, deleteCutting } from '../../../actions/cuttings/cuttings-actions';
+import CuttingDetails from './CuttingDetails';
 
 class CuttingDetailsContainer extends Component {
 

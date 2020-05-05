@@ -16,7 +16,6 @@
     border-radius: 0.6rem;
     transition: all .1s;
     outline: none;
-    // Change for the button element
     border: none;
     cursor: pointer;
     
@@ -78,3 +77,63 @@
 
 }
   
+.nav-button {
+  &,
+  &:link,
+  &:visited {
+    height: 6.5rem;
+    width: 6.5rem;
+    position: fixed;
+    background-color: $color-yellow-dark-1;
+    box-shadow: 0 0.5rem 3rem rgba($color-yellow-dark-1, .80);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    z-index: 2000;  
+    transition: all .2s;
+    text-align: center;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+    
+  }
+
+  &__line {
+    
+    margin-bottom: 0.5rem;
+    position: relative;
+    
+    &,
+    &::before,
+    &::after {
+      width: 1.1rem;
+      height: 2.6px;
+      background-color: $color-grey-light-2;
+      display: inline-block;  
+    }
+
+    &::before,
+    &::after { 
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {top: -.9rem;}
+    &::after {top: .9rem;}
+    }
+
+    &:hover &__line::before {
+      top: -1rem;
+    } 
+     &:hover &__line::after {
+      top: 1rem;
+    } 
+
+}

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import EventDetails from './EventDetails';
 import { loadEvent, deleteEvent } from '../../../actions/events/events-actions';
+import EventDetails from './EventDetails';
+
 
 class EventDetailsContainer extends Component {
 

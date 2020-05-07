@@ -2,10 +2,12 @@
   background-color: $color-grey-light-1; ;
   grid-column: maincol-start 1 / maincol-end 8;
  
+  
 }
 
 .aboutcontainer {
   text-align: center;
+  
 
   &--description {
     width: 75rem;
@@ -14,5 +16,6 @@
     letter-spacing: 0.05rem;
     margin-left: auto;
     margin-right: auto;
+    
    }
   } 

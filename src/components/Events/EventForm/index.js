@@ -1,9 +1,11 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function EventForm(props) {
+
+  const { t } = useTranslation();
+
   const {
-    t,
     onChange,
     onSubmit,
     values: {
@@ -235,4 +237,4 @@ function EventForm(props) {
   )
 }
 
-export default withTranslation()(EventForm)
+export default EventForm

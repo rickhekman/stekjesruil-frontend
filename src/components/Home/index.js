@@ -1,9 +1,9 @@
 import React from 'react'
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-function Home(props) {
+function Home() {
 
-  const { t } = props
+  const { t } = useTranslation();
 
   return (
     <div className="u-center-text">
@@ -13,4 +13,4 @@ function Home(props) {
   )
 }
 
-export default withTranslation()(Home)
+export default Home;

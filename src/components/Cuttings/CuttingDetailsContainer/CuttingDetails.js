@@ -1,9 +1,11 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function CuttingDetails(props) {
 
-  const { t, cutting } = props
+  const { cutting } = props
+
+  const { t } = useTranslation()
 
   return (
     <div>
@@ -21,4 +23,4 @@ function CuttingDetails(props) {
   )
 }
 
-export default withTranslation()(CuttingDetails)
+export default CuttingDetails

@@ -1,9 +1,11 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function EventDetails(props) {
 
-  const { t, event } = props
+  const { event } = props;
+
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -31,4 +33,4 @@ function EventDetails(props) {
   )
 }
 
-export default withTranslation()(EventDetails)
+export default EventDetails

@@ -1,9 +1,12 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function LoginForm(props) {
+
+  const { t } = useTranslation();
+
   const {
-    t,
+
     onChange,
     onSubmit,
     values: {
@@ -55,4 +58,4 @@ function LoginForm(props) {
   )
 }
 
-export default withTranslation()(LoginForm)
+export default LoginForm;

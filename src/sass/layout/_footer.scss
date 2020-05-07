@@ -1,11 +1,12 @@
 .footer {
   background-color: $color-grey-light-1; 
   grid-column: navigation-start / full-end;
+  
+  border-top: 3px solid $color-grey-light-2;
   height: 8rem;
-
-  margin-top: 5rem;
-  position: relative;
+  position: absolute;
   left:0;
   bottom:0;
+  // width: 100%;
   right:0;
 }

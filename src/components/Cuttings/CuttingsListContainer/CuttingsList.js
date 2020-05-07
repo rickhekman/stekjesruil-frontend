@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function CuttingsList(props) {
 
-  const { t } = props;
+  const { t } = useTranslation();
 
   return (
     <div className="cuttings--list">
@@ -33,4 +33,4 @@ function CuttingsList(props) {
   )
 }
 
-export default withTranslation()(CuttingsList)
+export default CuttingsList

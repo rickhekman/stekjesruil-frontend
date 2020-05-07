@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
 import SideDrawer from './SideDrawer';
 import Backdrop from '../../components/Backdrop';
 
-function Header(props) {
+function Header() {
 
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
@@ -31,7 +31,7 @@ function Header(props) {
     backdrop = <Backdrop click={backdropClickHandler} />
   }
 
-  const { t, i18n } = props
+  const { t, i18n } = useTranslation();
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
@@ -73,4 +73,4 @@ function Header(props) {
   )
 }
 
-export default withTranslation()(Header);
+export default Header;

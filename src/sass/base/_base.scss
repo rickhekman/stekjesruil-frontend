@@ -27,6 +27,9 @@ body {
 }
 
 .container {
+  position: relative;
+  min-height: 100vh;
+  
   display: grid;
   grid-template-rows: 12vh repeat(2, min-content);
   grid-template-columns: [navigation-start] 6rem [navigation-end full-start] 1fr [center-start] repeat(8,

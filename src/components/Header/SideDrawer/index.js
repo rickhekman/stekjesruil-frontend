@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function SideDrawer(props) {
 
@@ -9,7 +9,7 @@ function SideDrawer(props) {
     drawerClasses = 'side-drawer open';
   }
 
-  const { t } = props
+  const { t } = useTranslation();
 
   return (<div className={drawerClasses}>
     <div className="navigation">
@@ -47,4 +47,4 @@ function SideDrawer(props) {
 
 };
 
-export default withTranslation()(SideDrawer);
+export default SideDrawer;

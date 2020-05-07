@@ -1,10 +1,11 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function CuttingForm(props) {
 
+  const { t } = useTranslation()
+
   const {
-    t,
     onChange,
     onSubmit,
     values: {
@@ -76,9 +77,8 @@ function CuttingForm(props) {
       </div>
     </div>
 
-
   </div>
   )
 }
 
-export default withTranslation()(CuttingForm)
+export default CuttingForm

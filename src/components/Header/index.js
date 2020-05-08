@@ -8,6 +8,7 @@ import Backdrop from '../../components/Backdrop';
 function Header() {
 
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
+  const [checkBoxChecked, setCheckBoxChecked] = useState(false);
 
   const openHandler = () => {
     if (!sideDrawerOpen) {
@@ -17,12 +18,22 @@ function Header() {
     }
   };
 
-  const backdropClickHandler = () => {
-    setSideDrawerOpen(false)
-  }
-
   const closeHandler = () => {
     setSideDrawerOpen(false)
+    setCheckBoxChecked(false)
+  }
+
+  const checkBoxHandler = () => {
+    if (!checkBoxChecked) {
+      setCheckBoxChecked(true)
+    } else {
+      setCheckBoxChecked(false)
+    }
+  };
+
+  const backdropClickHandler = () => {
+    setSideDrawerOpen(false)
+    setCheckBoxChecked(false)
   }
 
   let backdrop;
@@ -41,7 +52,7 @@ function Header() {
     <div className="header--container">
       <nav className="header--container__nav">
         <div>
-          <DrawerToggleButton click={openHandler} />
+          <DrawerToggleButton click={openHandler} check={checkBoxChecked} handler={checkBoxHandler} />
           <SideDrawer show={sideDrawerOpen} click={closeHandler} />
           {backdrop}
         </div>

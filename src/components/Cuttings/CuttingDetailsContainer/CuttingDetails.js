@@ -10,12 +10,12 @@ function CuttingDetails(props) {
   return (
     <div>
       {cutting
-        ? <div>
-          <h1>{cutting.name}</h1>
-          <img src={cutting.photo} alt={cutting.name} />
-          <p>{cutting.description}</p>
+        ? <div className="cutting-details u-margin-top-medium">
+          <h1 className="cutting-details__title">{cutting.name}</h1>
+          <img src={cutting.photo} alt={cutting.name} className="cutting-details__photo" />
+          <p className="cutting-details__description">{cutting.description}</p>
 
-          <button type="button" onClick={props.onDelete}>{t('cutting.delete')}</button>
+          <button type="button" onClick={props.onDelete} className="cutting-details__delete-button">{t('cutting.delete')}</button>
         </div>
         : 'Cutting details are loading...'
       }

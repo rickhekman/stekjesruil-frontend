@@ -286,6 +286,40 @@ body {
     background-color: rgba(141, 255, 121, 0.1);
     transform: translateY(-2px); }
 
+.cutting-details {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: repeat(8, 1fr); }
+  .cutting-details__title {
+    grid-column: 3 / 7;
+    grid-row: 3 / 4;
+    justify-self: center;
+    font-size: 1.5rem;
+    color: #999696;
+    margin-top: 1rem;
+    justify-self: left;
+    padding-left: 4.5rem; }
+  .cutting-details__photo {
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+    height: auto;
+    width: 45rem;
+    justify-self: center; }
+  .cutting-details__description {
+    grid-column: 3 / 7;
+    grid-row: 4 / 4;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    padding: 1.2rem 1.5rem 3rem 1.5rem;
+    margin-bottom: 2rem;
+    justify-self: center;
+    align-self: center;
+    border-top: 1px dotted rgba(2, 140, 82, 0.5);
+    background-color: rgba(203, 241, 62, 0.1); }
+  .cutting-details__delete-button {
+    grid-column: 8 / 8;
+    grid-row: 5 / 5; }
+
 .cuttingsform-container {
   display: grid;
   grid-template-columns: [cuttingsform-start] 1fr repeat(8, [cuttingsform-col-start] minmax(min-content, 14rem) [cuttingsform-col-end]) 1fr [cuttingsform-end]; }
@@ -355,7 +389,7 @@ body {
 .footer {
   background-color: #fafafa;
   grid-column: navigation-start / full-end;
-  border-top: 3px solid #eeeeee;
+  border-top: 0px solid #eeeeee;
   height: 8rem;
   position: absolute;
   left: 0;

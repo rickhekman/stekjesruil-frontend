@@ -13,15 +13,20 @@
     }
 
     &__logo {
-      grid-column: header-center / header-center;
-      align-self: start;
-      justify-self: center;
+      grid-column: header-right/ header-right;
+      // align-self: start;
+      justify-self: end;
+      // margin-left: 10rem;
+      // margin-top: 1.1rem;
     }
 
     &__language {
       grid-column: header-right / header-right;
+      // grid-row: 1 / 1;
       align-self: start;
       justify-self: end;
+      // margin-right: 20rem;
+      // margin-top: -4rem;
     } 
  
 }

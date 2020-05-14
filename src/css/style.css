@@ -42,9 +42,9 @@ body {
   text-decoration: none; }
 
 .heading--primary {
-  font-size: 4.8rem;
+  font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   color: #028c52;
   cursor: pointer; }
@@ -223,6 +223,23 @@ body {
   margin-bottom: .7rem;
   display: block;
   letter-spacing: 0.1rem; }
+
+.select--language {
+  background-color: #fafafa;
+  border: none;
+  -webkit-border-top: 2px dotted #028c52;
+  border-top: 2px dotted #028c52;
+  -moz-appearance: button;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #028c52;
+  padding: 0.5rem 1rem; }
+  .select--language__option {
+    background-color: #fafafa;
+    color: #028c52; }
 
 .side-drawer {
   height: 100%;
@@ -407,9 +424,8 @@ body {
       grid-column: header-left / header-center;
       align-self: start; }
     .header--container__logo {
-      grid-column: header-center / header-center;
-      align-self: start;
-      justify-self: center; }
+      grid-column: header-right/ header-right;
+      justify-self: end; }
     .header--container__language {
       grid-column: header-right / header-right;
       align-self: start;

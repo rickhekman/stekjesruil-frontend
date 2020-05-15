@@ -46,7 +46,7 @@ You will also see any lint errors in the console.
 * [Node sass](https://github.com/sass/node-sass) - Node.js bindings to libsass
 
 
-#### This is version 0.1.1  
+#### This is version 0.1.2  
 
 License
 ----

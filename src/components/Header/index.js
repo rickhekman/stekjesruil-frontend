@@ -9,6 +9,7 @@ function Header() {
 
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
   const [checkBoxChecked, setCheckBoxChecked] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const openHandler = () => {
     if (!sideDrawerOpen) {
@@ -21,7 +22,7 @@ function Header() {
   const closeHandler = () => {
     setSideDrawerOpen(false)
     setCheckBoxChecked(false)
-  }
+  };
 
   const checkBoxHandler = () => {
     if (!checkBoxChecked) {
@@ -34,18 +35,16 @@ function Header() {
   const backdropClickHandler = () => {
     setSideDrawerOpen(false)
     setCheckBoxChecked(false)
-  }
+  };
 
   let backdrop;
 
   if (sideDrawerOpen) {
     backdrop = <Backdrop click={backdropClickHandler} />
-  }
-
-  const { t, i18n } = useTranslation();
+  };
 
   const changeLanguage = lng => {
-    i18n.changeLanguage(lng);
+    i18n.changeLanguage(lng.target.value)
   };
 
   return (
@@ -71,17 +70,34 @@ function Header() {
       <div className="header--container__language">
         <div className="navigation__sub">
           <div className="languages">
-            <nav>
-              <button onClick={() => changeLanguage('en')} className="btn btn--grey">English</button>
-            </nav>
-            <nav>
-              <button onClick={() => changeLanguage('nl')} className="btn btn--grey">Dutch</button>
-            </nav>
+            <select onChange={changeLanguage} className="select--language">
+              <option className="select--language__option">
+                {'Language'}
+              </option>
+              <option
+                key={'Dutch'}
+                value={'nl'}
+                onChange={changeLanguage}
+                className="select--language__option"
+              >
+                {'Nederlands'}
+              </option>
+              <option
+                key={'English'}
+                value={'en'}
+                onChange={changeLanguage}
+                className="select--language__option"
+              >
+                {'English'}
+              </option>
+            </select>
           </div>
         </div>
       </div>
     </div>
   )
-}
+};
 
 export default Header;
+
+

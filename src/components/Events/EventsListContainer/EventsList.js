@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function EventsList(props) {
 
   return (
-    <div className="events--list u-margin-top-big">
+    <div className="events--list">
       {props.events.eventsList
         ? props.events.eventsList.map(
           event => <Link to={`/events/${event.id}`}

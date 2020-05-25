@@ -13,7 +13,7 @@ import Home from '../Home';
 
 function Main() {
   return (
-    <div className="maincolumn u-margin-top-small">
+    <div className="maincolumn">
 
       <div className="home">
         <Route path="/" exact component={Home} />
@@ -35,7 +35,7 @@ function Main() {
         <Route path="/about/" exact component={About} />
       </div>
 
-      <div className="users u-margin-top-small">
+      <div className="users">
         <Route path="/signup/" exact component={SignupContainer} />
         <Route path="/login/" exact component={LoginContainer} />
       </div>

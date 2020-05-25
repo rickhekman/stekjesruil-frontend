@@ -10,7 +10,7 @@ function CuttingDetails(props) {
   return (
     <div>
       {cutting
-        ? <div className="cutting-details u-margin-top-medium">
+        ? <div className="cutting-details">
           <h1 className="cutting-details__title">{cutting.name}</h1>
           <img src={cutting.photo} alt={cutting.name} className="cutting-details__photo" />
           <p className="cutting-details__description">{cutting.description}</p>

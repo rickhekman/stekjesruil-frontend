@@ -46,7 +46,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-align: center;
-  color: #028c52;
+  color: #028d53;
   cursor: pointer; }
 
 .heading--secondary {
@@ -59,14 +59,14 @@ body {
   text-transform: uppercase;
   font-size: 2.2rem;
   font-weight: 700;
-  color: #028c52;
+  color: #028d53;
   margin-bottom: 3rem; }
 
 .heading--eventslist {
   text-transform: uppercase;
   font-size: 2.1rem;
   font-weight: 500;
-  color: #028c52;
+  color: #028d53;
   letter-spacing: 0.2rem; }
 
 .heading--loginfeedback {
@@ -78,7 +78,7 @@ body {
   padding: 0.8rem; }
 
 .heading--home-subtitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   font-style: italic;
   color: #777777; }
@@ -167,7 +167,7 @@ body {
     color: #fafafa; }
 
 .btn--green {
-  background-color: #028c52;
+  background-color: #028d53;
   color: #fafafa;
   margin-bottom: 1.8rem; }
   .btn--green:hover {
@@ -227,19 +227,19 @@ body {
 .select--language {
   background-color: #fafafa;
   border: none;
-  -webkit-border-top: 2px dotted #028c52;
-  border-top: 2px dotted #028c52;
+  -webkit-border-top: 2px dotted #028d53;
+  border-top: 2px dotted #028d53;
   -moz-appearance: button;
   -webkit-appearance: button;
   appearance: button;
   outline: none;
   font-size: 1.4rem;
   font-weight: 400;
-  color: #028c52;
+  color: #028d53;
   padding: 0.5rem 1rem; }
   .select--language__option {
     background-color: #fafafa;
-    color: #028c52; }
+    color: #028d53; }
 
 .side-drawer {
   height: 100%;
@@ -331,7 +331,7 @@ body {
     margin-bottom: 2rem;
     justify-self: center;
     align-self: center;
-    border-top: 1px dotted rgba(2, 140, 82, 0.5);
+    border-top: 1px dotted rgba(2, 141, 83, 0.5);
     background-color: rgba(203, 241, 62, 0.1); }
   .cutting-details__delete-button {
     grid-column: 8 / 8;
@@ -376,7 +376,8 @@ body {
   border-radius: 1rem;
   background-color: #eeeeee;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  transition: all .1s; }
   .event--name {
     font-size: 2.4rem;
     color: #999696;
@@ -471,15 +472,13 @@ body {
   text-transform: uppercase;
   color: #000;
   background: #f8b809;
-  border-radius: 0rem 1.5rem 1.5rem 0rem;
-  transition: all .2s; }
+  border-radius: 0rem 1.5rem 1.5rem 0rem; }
 
 .navigation__link:hover {
   background: #ffd000;
   color: #f96714;
   border-left: 5px solid #f96714;
   box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
   background-position: 100%; }
 
 .navigation__checkbox {
@@ -539,6 +538,31 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__line::after {
   top: 0;
   transform: rotate(-45deg); }
+
+.slider {
+  margin-top: 5rem;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: [slider-prev] 1fr [content-start] minmax(min-content, 14rem) [content-end] 1fr [slider-next]; }
+  .slider--prev {
+    grid-column: slider-prev / content-start;
+    justify-self: left;
+    align-self: center; }
+  .slider--content {
+    grid-column: content-start / content-end; }
+    .slider--content__media {
+      width: auto;
+      height: 70rem;
+      justify-self: center;
+      align-self: center; }
+  .slider--next {
+    grid-column: 3 / 4;
+    justify-self: right;
+    align-self: center; }
+  .slider--icon {
+    height: 10rem;
+    width: 10rem;
+    cursor: pointer; }
 
 .users {
   background-color: #fafafa;

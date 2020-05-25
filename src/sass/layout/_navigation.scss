@@ -24,6 +24,7 @@
   }
     
   &__link {
+     
     &:link,
     &:visited {
         
@@ -35,9 +36,7 @@
       text-transform: uppercase;
       color: $color-black;
       background: $color-yellow-dark-1;
-      border-radius: 0rem 1.5rem 1.5rem 0rem;
-      transition: all .2s;
-        
+      border-radius: 0rem 1.5rem 1.5rem 0rem;        
     }
 
     &:hover{
@@ -45,7 +44,6 @@
       color: $color-orange-1;
       border-left: 5px solid $color-orange-1;
       box-shadow: 0 0.7rem 1rem rgba($color-black, .10);
-      transform: translateY(-2px);
       background-position: 100%;
       }  
   } 

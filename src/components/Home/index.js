@@ -1,14 +1,15 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
+import Slider from '../Slider'
 
 function Home() {
 
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div className="u-center-text">
-      <img src={require('../../img/stekjesruil-02.jpg')} alt="homephoto" />
-      <h2 className="heading--home-subtitle">{t('home.subtitle')}</h2>
+      {/* <h2 className="heading--home-subtitle">{t('home.subtitle')}</h2> */}
+      <Slider />
     </div>
   )
 }

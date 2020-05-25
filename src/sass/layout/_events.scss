@@ -25,6 +25,7 @@
   background-color: $color-grey-light-2; 
   height: auto;
   text-align: center;
+  transition: all .1s;
 
   &--name {
     font-size: 2.4rem;

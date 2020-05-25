@@ -28,7 +28,7 @@ function EventForm(props) {
   } = props;
 
   return (<div className="eventsform-container">
-    <div className="eventsform u-margin-top-small">
+    <div className="eventsform">
       <div className="u-margin-bottom-medium">
         <h2 className="heading--secondary">{t('event-form.title')}</h2>
       </div>

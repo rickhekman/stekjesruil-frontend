@@ -15,7 +15,7 @@ function LoginForm(props) {
     }
   } = props;
 
-  return (<div className="logincontainer u-margin-top-medium">
+  return (<div className="logincontainer">
     <div className="logincontainer__form">
       <div className="u-margin-bottom-medium">
         <h2 className="heading--secondary">{t('login-form.title')}</h2>

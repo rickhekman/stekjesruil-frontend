@@ -66,7 +66,7 @@ function EventForm(props) {
           <input
             className="form__input"
             id="date-start"
-            type="date"
+            type="datetime-local"
             onChange={onChange}
             name="startdate"
             min={"2016-01-01"}
@@ -77,7 +77,7 @@ function EventForm(props) {
           <input
             className="form__input"
             id="date-end"
-            type="date"
+            type="datetime-local"
             onChange={onChange}
             name="enddate"
             min={"2016-01-01"}
@@ -147,7 +147,6 @@ function EventForm(props) {
             name="address2"
             value={address2}
             placeholder="Location address 2"
-            required
           />
         </div>
         <div className="form__group">
@@ -198,7 +197,7 @@ function EventForm(props) {
             name="latitude"
             value={latitude}
             placeholder="Location latitude"
-            required
+
           />
         </div>
         <div className="form__group">
@@ -211,7 +210,7 @@ function EventForm(props) {
             name="longitude"
             value={longitude}
             placeholder="Location longitude"
-            required
+
           />
         </div>
         <div className="form__group">
@@ -224,7 +223,7 @@ function EventForm(props) {
             name="eventurl"
             value={eventurl}
             placeholder="Facebook event"
-            required
+
           />
         </div>
         <div className="u-margin-top-big">

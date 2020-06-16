@@ -1,5 +1,7 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
+@import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
@@ -10,7 +12,6 @@
 @import "components/sideDrawer";
 
 @import "layout/about";
-
 @import "layout/cuttings";
 @import "layout/events";
 @import "layout/footer";

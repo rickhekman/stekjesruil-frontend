@@ -37,16 +37,16 @@ function Slider() {
 
   return (
     <div className="slider">
-      <div className="slider--prev">
-        <img src={LeftArrow} alt="Left arrow" onClick={previousSlide} className="slider--icon" />
+      <div className="slider__prev">
+        <img src={LeftArrow} alt="Left arrow" onClick={previousSlide} className="slider__icon" />
       </div>
-      <div className="slider--content">
-        {slidesCollection.map((image, index) =>
-          <img key={index} src={image} alt="stekjesruilphoto" className="slider--content__media" />
+      <div className="slider-content">
+        {slidesCollection.map((slide, index) =>
+          <img key={index} src={slide} alt="stekjesruilphoto" className="slider-content__media" />
         )}
       </div>
-      <div className="slider--next">
-        <img src={RightArrow} alt="Left arrow" onClick={nextSlide} className="slider--icon" />
+      <div className="slider__next">
+        <img src={RightArrow} alt="Left arrow" onClick={nextSlide} className="slider__icon" />
       </div>
 
     </div>

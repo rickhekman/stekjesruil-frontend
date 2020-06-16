@@ -1,9 +1,10 @@
 .header {
   background-color: $color-grey-light-1; 
   grid-column: navigation-start / full-end;
-  padding: 2rem;
+  padding: 2rem;  
+}
 
-  &--container {
+.header-layout {
    display: grid;
    grid-template-columns: [header-left] 1fr [header-center] 1fr [header-right] 1fr;
 
@@ -14,21 +15,12 @@
 
     &__logo {
       grid-column: header-right/ header-right;
-      // align-self: start;
       justify-self: end;
-      // margin-left: 10rem;
-      // margin-top: 1.1rem;
     }
 
     &__language {
       grid-column: header-right / header-right;
-      // grid-row: 1 / 1;
       align-self: start;
       justify-self: end;
-      // margin-right: 20rem;
-      // margin-top: -4rem;
     } 
- 
-}
-  
-}
+  }

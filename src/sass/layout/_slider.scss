@@ -1,37 +1,36 @@
 .slider {
-  margin-top: 5rem;
+  // margin-top: 5rem;
   background-color: $color-grey-light-1; 
   display: grid;
   grid-template-columns: [slider-prev] 1fr [content-start] minmax(min-content, 14rem) [content-end] 1fr [slider-next];
 
-  &--prev{
+  &__prev{
     grid-column: slider-prev / content-start;
     justify-self: left;
     align-self: center;
   }
 
-  &--content{
-    grid-column: content-start / content-end;
-    
-
-    &__media {
-      width: auto;
-      height: 70rem;
-      justify-self: center;
-      align-self: center;
-    }
-  }
-
-  &--next{
+  &__next{
     grid-column: 3 / 4;
     justify-self: right;
     align-self: center;
   }
 
-   &--icon {
+   &__icon {
       height: 10rem;
       width: 10rem;
       cursor: pointer;
     }
 
 }
+
+.slider-content{
+    grid-column: content-start / content-end;
+    
+    &__media {
+      width: auto;
+      height: 77rem;
+      justify-self: center;
+      align-self: center;      
+    }
+  }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+
 import About from '../../components/About';
 import Events from '../Events/EventsListContainer';
 import EventDetails from '../Events/EventDetailsContainer';
@@ -21,7 +22,9 @@ function Main() {
 
       <div className="events">
         <Route path="/events/" exact component={Events} />
+
         <Route path="/events/:id" exact component={EventDetails} />
+
         <Route path="/create-event/" exact component={CreateEventContainer} />
       </div>
 
@@ -39,6 +42,7 @@ function Main() {
         <Route path="/signup/" exact component={SignupContainer} />
         <Route path="/login/" exact component={LoginContainer} />
       </div>
+
 
     </div>
   )

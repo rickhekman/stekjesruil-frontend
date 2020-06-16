@@ -30,7 +30,7 @@ class LoginContainer extends Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.userLoggedIn !== this.props.userLoggedIn) {
-      setTimeout(() => this.props.history.push("/"), 1500);
+      setTimeout(() => this.props.history.push("/"), 2000);
     }
   }
 

@@ -15,10 +15,8 @@
     "login": "Inloggen"
   },
   "event": {
-    "date": "Datum: ",
-    "description": "Over: ",
-    "location": "Locatie: ",
-    "fb": "Facebook evenement",
+    "location": "Locatie ",
+    "fb": "evenement",
     "website": "Locatie website"
   },
   "cutting": {

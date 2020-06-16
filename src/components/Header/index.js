@@ -48,8 +48,8 @@ function Header() {
   };
 
   return (
-    <div className="header--container">
-      <nav className="header--container__nav">
+    <div className="header-layout">
+      <nav className="header-layout__nav">
         <div>
           <DrawerToggleButton click={openHandler} check={checkBoxChecked} handler={checkBoxHandler} />
           <SideDrawer show={sideDrawerOpen} click={closeHandler} />
@@ -57,7 +57,7 @@ function Header() {
         </div>
       </nav>
 
-      <div className="header--container__logo">
+      <div className="header-layout__logo">
         <Link to="/" style={{
           textDecoration: 'none'
         }}>
@@ -67,7 +67,7 @@ function Header() {
         </Link>
       </div>
 
-      <div className="header--container__language">
+      <div className="header-layout__language">
         <div className="navigation__sub">
           <div className="languages">
             <select onChange={changeLanguage} className="select--language">

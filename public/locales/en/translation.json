@@ -15,10 +15,8 @@
     "login": "Login"
   },
   "event": {
-    "date": "Date: ",
-    "description": "About: ",
-    "location": "Location: ",
-    "fb": "Facebook event",
+    "location": "Location ",
+    "fb": "event",
     "website": "Location website"
   },
   "cutting": {

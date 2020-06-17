@@ -3,23 +3,25 @@ import { connect } from 'react-redux';
 import { createEvent } from '../../../actions/events/events-actions';
 import EventForm from '../EventForm/index';
 
+const emptyForm = {
+  title: '',
+  photo: '',
+  description: '',
+  startdate: '',
+  enddate: '',
+  locationname: '',
+  address1: '',
+  address2: '',
+  zipcode: '',
+  city: '',
+  country: '',
+  geolocation: '',
+  eventurl: ''
+}
+
 class CreateEventContainer extends Component {
 
-  state = {
-    title: '',
-    photo: '',
-    description: '',
-    startdate: '',
-    enddate: '',
-    locationname: '',
-    address1: '',
-    address2: '',
-    zipcode: '',
-    city: '',
-    country: '',
-    geolocation: '',
-    eventurl: ''
-  }
+  state = emptyForm
 
   onChange = (event) => {
     this.setState({
@@ -30,21 +32,7 @@ class CreateEventContainer extends Component {
   onSubmit = (event) => {
     event.preventDefault()
     this.props.createEvent(this.state)
-    this.setState({
-      title: '',
-      photo: '',
-      description: '',
-      startdate: '',
-      enddate: '',
-      locationname: '',
-      address1: '',
-      address2: '',
-      zipcode: '',
-      city: '',
-      country: '',
-      geolocation: '',
-      eventurl: ''
-    })
+    this.setState(emptyForm)
   }
 
   componentDidUpdate(prevProps) {

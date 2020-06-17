@@ -3,13 +3,15 @@ import { connect } from 'react-redux';
 import { createCutting } from '../../../actions/cuttings/cuttings-actions';
 import CuttingForm from '../CuttingForm';
 
+const emptyForm = {
+  name: '',
+  photo: '',
+  description: ''
+}
+
 class CreateCuttingContainer extends Component {
 
-  state = {
-    name: '',
-    photo: '',
-    description: ''
-  }
+  state = emptyForm
 
   onChange = (event) => {
     this.setState({
@@ -20,11 +22,7 @@ class CreateCuttingContainer extends Component {
   onSubmit = (event) => {
     event.preventDefault()
     this.props.createCutting(this.state)
-    this.setState({
-      name: '',
-      photo: '',
-      description: ''
-    })
+    this.setState(emptyForm)
   }
 
   componentDidUpdate(prevProps) {

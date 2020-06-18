@@ -2,18 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Moment from 'react-moment';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import TrashIcon from '../../../img/icons/trashcan.svg';
 import FbIcon from '../../../img/icons/fb-box-fill.svg';
 
 function EventDetails(props) {
 
+  // console.log('Event props', props.event)
   const { event } = props;
 
   const { t } = useTranslation();
 
   return (
+
     <div>
+
       {event
         ? <div className="eventpopup">
 
@@ -54,25 +58,39 @@ function EventDetails(props) {
             </div>
             <div className="eventdetails__location">
               <p className="paragraph" style={{ fontWeight: '600', fontSize: '1.5rem' }}>{t('event.location')}</p>
-              <p className="paragraph">{event.locationname}</p>
-              <p className="paragraph">{event.address1}</p>
-              <p className="paragraph">{event.address2}</p>
-              <p className="paragraph">{event.zipcode} {event.city}</p>
-              <p className="paragraph">{event.country}</p>
-              <p className="paragraph">{event.geolocation}</p>
+              <p className="paragraph">
+                {event.locationname}<br />
+                {event.address1}<br />
+                {event.address2}<br />
+                {event.zipcode} {event.city}<br />
+                {event.country}</p><br />
               <button type="button" onClick={props.onWebsiteClick} className="eventdetails__btn-website btn btn--yellow">{t('event.website')}</button>
             </div>
+            <Map center={[event.latitude, event.longitude]} zoom={15}>
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              />
+              <Marker position={[event.latitude, event.longitude]}>
+                <Popup>
+                  {event.locationname}<br />
+                  {event.address1}<br />
+                  {event.zipcode} {event.city}
+                </Popup>
+              </Marker>
+            </Map>
             <div className="eventdetails__fb-event" onClick={props.onClick}>
               <img src={FbIcon} alt="icon" /><p className="paragraph">{t('event.fb')}</p>
             </div>
 
             <img src={TrashIcon} type="button" onClick={props.onDelete} className="eventdetails__delete" alt="delete icon" />
+
           </div>
 
         </div>
         : 'Event details are loading...'
       }
-    </div>
+    </div >
   )
 }
 

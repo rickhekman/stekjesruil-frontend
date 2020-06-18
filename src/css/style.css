@@ -555,6 +555,15 @@ body {
     cursor: pointer;
     z-index: 3; }
 
+.leaflet-container {
+  grid-column: 3 / 4;
+  grid-row: 4 / 4;
+  align-self: start;
+  justify-self: end;
+  margin-left: 2rem;
+  width: 31rem;
+  height: 18rem; }
+
 .footer {
   background-color: #fafafa;
   grid-column: navigation-start / full-end;

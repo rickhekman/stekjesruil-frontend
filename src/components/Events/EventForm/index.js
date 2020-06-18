@@ -197,7 +197,7 @@ function EventForm(props) {
             name="latitude"
             value={latitude}
             placeholder="Location latitude"
-
+            required
           />
         </div>
         <div className="form__group">
@@ -210,7 +210,7 @@ function EventForm(props) {
             name="longitude"
             value={longitude}
             placeholder="Location longitude"
-
+            required
           />
         </div>
         <div className="form__group">

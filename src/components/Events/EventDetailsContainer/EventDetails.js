@@ -2,18 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Moment from 'react-moment';
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
-
-import TrashIcon from '../../../img/icons/trashcan.svg';
-import FbIcon from '../../../img/icons/fb-box-fill.svg';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 function EventDetails(props) {
 
-  // console.log('Event props', props.event)
   const { event } = props;
 
   const { t } = useTranslation();
-
+  
   return (
 
     <div>
@@ -66,7 +62,7 @@ function EventDetails(props) {
                 {event.country}</p><br />
               <button type="button" onClick={props.onWebsiteClick} className="eventdetails__btn-website btn btn--yellow">{t('event.website')}</button>
             </div>
-            <Map center={[event.latitude, event.longitude]} zoom={15}>
+            <MapContainer center={[event.latitude, event.longitude]} zoom={18}>
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -78,19 +74,19 @@ function EventDetails(props) {
                   {event.zipcode} {event.city}
                 </Popup>
               </Marker>
-            </Map>
+            </MapContainer>
             <div className="eventdetails__fb-event" onClick={props.onClick}>
-              <img src={FbIcon} alt="icon" /><p className="paragraph">{t('event.fb')}</p>
+              <img src={'../images/icons/fb-box-fill.svg'} alt="icon" /><p className="paragraph">{t('event.fb')}</p>
             </div>
 
-            <img src={TrashIcon} type="button" onClick={props.onDelete} className="eventdetails__delete" alt="delete icon" />
+            <img src={'../images/icons/trashcan.svg'} type="button" onClick={props.onDelete} className="eventdetails__delete" alt="delete icon" />
 
           </div>
 
         </div>
         : 'Event details are loading...'
       }
-    </div >
+    </div>
   )
 }
 

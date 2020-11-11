@@ -1,5 +1,4 @@
 .slider {
-  // margin-top: 5rem;
   background-color: $color-grey-light-1; 
   display: grid;
   grid-template-columns: [slider-prev] 1fr [content-start] minmax(min-content, 14rem) [content-end] 1fr [slider-next];
@@ -16,11 +15,11 @@
     align-self: center;
   }
 
-   &__icon {
-      height: 10rem;
-      width: 10rem;
-      cursor: pointer;
-    }
+  &__icon {
+    height: 10rem;
+    width: 10rem;
+    cursor: pointer;
+  }
 
 }
 
@@ -31,6 +30,7 @@
       width: auto;
       height: 77rem;
       justify-self: center;
-      align-self: center;      
+      align-self: center;   
+      cursor: pointer;   
     }
   }

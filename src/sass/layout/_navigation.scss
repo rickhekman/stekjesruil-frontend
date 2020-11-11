@@ -1,8 +1,7 @@
 .navigation {
-  
   &__nav {
     background-color: $color-grey-light-2;
-    height: 100%;  
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -17,14 +16,12 @@
   }
 
   &__item {
-    margin: 3rem 0 3rem 0; 
+    margin: 3rem 0 3rem 0;
   }
-    
+
   &__link {
-     
     &:link,
     &:visited {
-        
       font-family: $font-heading;
       font-size: 2rem;
       font-weight: 500;
@@ -33,19 +30,19 @@
       text-transform: uppercase;
       color: $color-black;
       background: $color-yellow-dark-1;
-      border-radius: 0rem 1.5rem 1.5rem 0rem;        
+      border-radius: 0rem 1.5rem 1.5rem 0rem;
     }
 
-    &:hover{
+    &:hover {
       background: $color-yellow-medium-2;
       color: $color-orange-1;
       border-left: 5px solid $color-orange-1;
-      box-shadow: 0 0.7rem 1rem rgba($color-black, .10);
+      box-shadow: 0 0.7rem 1rem rgba($color-black, 0.1);
       background-position: 100%;
-      transition: all .2s;
-      }  
-  } 
-      
+      transition: all 0.2s;
+    }
+  }
+
   &__checkbox {
     display: none;
   }
@@ -58,13 +55,13 @@
       width: 6.5rem;
       position: fixed;
       background-color: $color-yellow-dark-1;
-      box-shadow: 0 0.5rem 3rem rgba($color-yellow-dark-1, .80);
+      box-shadow: 0 0.5rem 3rem rgba($color-yellow-dark-1, 0.8);
       border-radius: 50%;
       border: none;
       cursor: pointer;
       box-sizing: border-box;
-      z-index: 2000;  
-      transition: all .2s;
+      z-index: 2000;
+      transition: all 0.2s;
       text-align: center;
     }
 
@@ -88,31 +85,31 @@
       height: 2.6px;
       background-color: $color-grey-light-2;
       display: inline-block;
-  }
+    }
 
     &::before,
-    &::after { 
+    &::after {
       content: "";
       position: absolute;
       left: 0;
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     &::before {
-      top: -.9rem;
+      top: -0.9rem;
     }
     &::after {
-      top: .9rem;
+      top: 0.9rem;
     }
   }
-  
+
   &__button:hover &__line::before {
     top: -1rem;
-  } 
+  }
 
   &__button:hover &__line::after {
     top: 1rem;
-  } 
+  }
 
   &__checkbox:checked + &__button &__line {
     background-color: transparent;
@@ -127,5 +124,4 @@
     top: 0;
     transform: rotate(-45deg);
   }
-
 }

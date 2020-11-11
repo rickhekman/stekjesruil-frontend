@@ -10,71 +10,69 @@
     color: $color-black;
     display: inline-block;
     text-decoration: none;
-    transition: all .2s;
+    transition: all 0.2s;
     text-transform: uppercase;
     padding: 0.8rem;
     border-radius: 0.6rem;
-    transition: all .1s;
+    transition: all 0.1s;
     outline: none;
     border: none;
     cursor: pointer;
   }
 
   &:hover {
-    box-shadow: 0 .3rem 0.7rem rgba($color-black, .10);
+    box-shadow: 0 0.3rem 0.7rem rgba($color-black, 0.1);
     transform: translateY(-2px);
   }
 
-  &:active{
-    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0);
   }
-  
+
   &--yellow {
     background-color: $color-yellow-light-3;
     color: $color-black;
     margin-bottom: 1rem;
-    
-  &:hover {
-    background-color: $color-yellow-light-2;
-    color: $color-black;
-  }
- }
 
-  &--green{
+    &:hover {
+      background-color: $color-yellow-light-2;
+      color: $color-black;
+    }
+  }
+
+  &--green {
     background-color: $color-green-dark-1;
     color: $color-grey-light-1;
     margin-bottom: 1.8rem;
-  &:hover {
-    background-color: $color-green-dark-2;
-    color: $color-white;
+    &:hover {
+      background-color: $color-green-dark-2;
+      color: $color-white;
+    }
   }
- }
 
-   &--grey{
+  &--grey {
     background-color: $color-grey-light-3;
     color: $color-grey-light-1;
     margin-bottom: 1.4rem;
-  &:hover {
-    background-color: $color-grey-dark-1;
-    color: $color-white;
+    &:hover {
+      background-color: $color-grey-dark-1;
+      color: $color-white;
+    }
   }
- }
 
-   &--form-blue{
+  &--form-blue {
     background-color: $color-blue-light-1;
     color: $color-grey-light-1;
     margin-bottom: 1.8rem;
     padding: 1.3rem 1.4rem;
-    width: 14rem;    
-  &:hover {
-    background-color: $color-blue-medium-1;
-    color: $color-white;
+    width: 14rem;
+    &:hover {
+      background-color: $color-blue-medium-1;
+      color: $color-white;
+    }
   }
- }
-
 }
-
 
 .btn--text {
   &,
@@ -88,11 +86,11 @@
     color: $color-black;
     display: inline-block;
     text-decoration: none;
-    transition: all .2s;
+    transition: all 0.2s;
     text-transform: uppercase;
     padding: 0.8rem 1.4rem 0.8rem 1.4rem;
     border-radius: 0.6rem;
-    transition: all .1s;
+    transition: all 0.1s;
     outline: none;
     border: none;
     cursor: pointer;
@@ -104,7 +102,7 @@
     // transform: translateY(-2px);
   }
 
-  &:active{
+  &:active {
     // box-shadow: 0 .5rem 1rem rgba($color-black, .15);
     // transform: translateY(0);
   }

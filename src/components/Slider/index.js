@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import LeftArrow from '../../img/icons/chevron-left.svg';
-import RightArrow from '../../img/icons/chevron-right.svg';
 
 function Slider() {
 
   const [slides] = useState([
-    require('../../img/slides/low/stekjesruilslide-low-02.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-03.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-01.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-06.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-05.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-07.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-04.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-08.jpg'),
-    require('../../img/slides/low/stekjesruilslide-low-09.jpg'),
+    'images/slides/stekjesslide02.jpg',
+    'images/slides/stekjesslide03.jpg',
+    'images/slides/stekjesslide01.jpg',
+    'images/slides/stekjesslide06.jpg',
+    'images/slides/stekjesslide05.jpg',
+    'images/slides/stekjesslide07.jpg',
+    'images/slides/stekjesslide04.jpg',
+    'images/slides/stekjesslide08.jpg',
+    'images/slides/stekjesslide09.jpg'
   ]);
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -38,15 +36,15 @@ function Slider() {
   return (
     <div className="slider">
       <div className="slider__prev">
-        <img src={LeftArrow} alt="Left arrow" onClick={previousSlide} className="slider__icon" />
+        <img src={'images/icons/chevron-left.svg'} alt="Left arrow" onClick={previousSlide} className="slider__icon" />
       </div>
       <div className="slider-content">
         {slidesCollection.map((slide, index) =>
-          <img key={index} src={slide} alt="stekjesruilphoto" className="slider-content__media" />
+          <img key={index} src={slide} alt="stekjesruilphoto" className="slider-content__media" onClick={nextSlide} />
         )}
       </div>
       <div className="slider__next">
-        <img src={RightArrow} alt="Left arrow" onClick={nextSlide} className="slider__icon" />
+        <img src={'images/icons/chevron-right.svg'} alt="Left arrow" onClick={nextSlide} className="slider__icon" />
       </div>
 
     </div>

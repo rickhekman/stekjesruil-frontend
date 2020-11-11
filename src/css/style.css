@@ -141,11 +141,11 @@ body {
   color: #000;
   display: inline-block;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
   text-transform: uppercase;
   padding: 0.8rem;
   border-radius: 0.6rem;
-  transition: all .1s;
+  transition: all 0.1s;
   outline: none;
   border: none;
   cursor: pointer; }
@@ -201,11 +201,11 @@ body {
   color: #000;
   display: inline-block;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
   text-transform: uppercase;
   padding: 0.8rem 1.4rem 0.8rem 1.4rem;
   border-radius: 0.6rem;
-  transition: all .1s;
+  transition: all 0.1s;
   outline: none;
   border: none;
   cursor: pointer;
@@ -239,26 +239,24 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   margin-left: 2rem;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
   display: block;
   letter-spacing: 0.1rem; }
 
 .select--language {
   background-color: #fafafa;
   border: none;
-  -webkit-border-top: 2px dotted #028d53;
-  border-top: 2px dotted #028d53;
   -moz-appearance: button;
   -webkit-appearance: button;
   appearance: button;
   outline: none;
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: #028d53;
-  padding: 0.5rem 1rem; }
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #999696;
+  padding: 0.5rem 0; }
   .select--language__option {
     background-color: #fafafa;
-    color: #028d53; }
+    color: #2c2d2e; }
 
 .side-drawer {
   height: 100%;
@@ -641,7 +639,7 @@ body {
   border-left: 5px solid #f96714;
   box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.1);
   background-position: 100%;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .navigation__checkbox {
   display: none; }
@@ -657,7 +655,7 @@ body {
   cursor: pointer;
   box-sizing: border-box;
   z-index: 2000;
-  transition: all .2s;
+  transition: all 0.2s;
   text-align: center; }
 
 .navigation__button:focus {
@@ -678,11 +676,11 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .navigation__line::before {
-    top: -.9rem; }
+    top: -0.9rem; }
   .navigation__line::after {
-    top: .9rem; }
+    top: 0.9rem; }
 
 .navigation__button:hover .navigation__line::before {
   top: -1rem; }
@@ -724,14 +722,15 @@ body {
     width: auto;
     height: 77rem;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    cursor: pointer; }
 
 .users {
   background-color: #fafafa;
   grid-column: maincol-start 3 / maincol-end 6; }
 
 .signupcontainer {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.91) 0%, rgba(255, 255, 255, 0.91) 65%, transparent 90%), url("../img/stekjesruilers-02.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.91) 0%, rgba(255, 255, 255, 0.91) 65%, transparent 90%), url("../img/forms/signup.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -740,10 +739,10 @@ body {
   width: 60rem; }
   .signupcontainer__form {
     height: 50%;
-    padding: 4rem  0rem  0rem  9rem; }
+    padding: 4rem 0rem 0rem 9rem; }
 
 .logincontainer {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 95%), url("../img/stekjesruilers-04.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 90%), url("../img/forms/login.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -752,4 +751,4 @@ body {
   width: 55rem; }
   .logincontainer__form {
     height: 50%;
-    padding: 3.5rem  0rem  0rem  9rem; }
+    padding: 3.5rem 0rem 0rem 9rem; }

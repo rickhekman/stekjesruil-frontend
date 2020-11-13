@@ -8,9 +8,9 @@ $color-green-light-3: rgb(203, 241, 62);
 $color-green-light-4: rgb(141, 255, 121);
 
 $color-blue-green-1: rgb(1, 212, 136);
-$color-blue-green-2:rgb(1, 235, 136);
-$color-blue-green-3:rgb(1, 235, 123);
-$color-blue-green-4:rgb(1, 250, 123);
+$color-blue-green-2: rgb(1, 235, 136);
+$color-blue-green-3: rgb(1, 235, 123);
+$color-blue-green-4: rgb(1, 250, 123);
 
 $color-green-dark-1: rgb(2, 141, 83);
 $color-green-dark-2: rgb(1, 111, 0);
@@ -26,7 +26,6 @@ $color-yellow-medium-1: rgb(250, 213, 7);
 $color-yellow-medium-2: rgb(255, 208, 0);
 
 $color-yellow-dark-1: rgb(248, 184, 9);
-
 
 // --Blue colors:
 $color-blue-light-1: rgb(59, 194, 248);
@@ -49,7 +48,6 @@ $color-grey-light-1: #fafafa;
 $color-grey-light-2: rgb(238, 238, 238);
 $color-grey-light-3: rgb(204, 204, 204);
 
-
 $color-grey-dark-1: rgb(153, 150, 150);
 $color-grey-dark-2: rgb(119, 119, 119);
 $color-grey-dark-3: rgb(66, 66, 66);
@@ -60,8 +58,8 @@ $color-white: #fff;
 $color-black: #000;
 
 // FONTS:
-$font-heading: 'Ubuntu', sans-serif; 
-$font-paragraph: 'PT Sans', sans-serif;
+$font-heading: "Ubuntu", sans-serif;
+$font-paragraph: "PT Sans", sans-serif;
 
 // --Font sizes:
 $default-font-size: 1.6rem;

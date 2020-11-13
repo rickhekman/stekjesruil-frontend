@@ -57,7 +57,7 @@ function EventDetails(props) {
               <p className="paragraph">
                 {event.locationname}<br />
                 {event.address1}<br />
-                {event.address2}<br />
+                {/* {event.address2}<br /> */}
                 {event.zipcode} {event.city}<br />
                 {event.country}</p><br />
               <button type="button" onClick={props.onWebsiteClick} className="eventdetails__btn-website btn btn--yellow">{t('event.website')}</button>

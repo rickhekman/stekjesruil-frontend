@@ -1,4 +1,4 @@
-export default (state = { userCreated: false, token: null }, action = {}) => {
+ function reducer(state = { userCreated: false, token: null }, action = {}) {
   switch (action.type) {
     case 'CREATE_USER':
       return { ...state, userCreated: true }
@@ -8,3 +8,5 @@ export default (state = { userCreated: false, token: null }, action = {}) => {
       return state
   }
 }
+
+export default reducer

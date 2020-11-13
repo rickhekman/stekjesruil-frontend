@@ -1,80 +1,80 @@
- body {
-   font-weight: 300;
-   font-size: 1.6rem;
-   line-height: 1.7;
-   color: $color-black;
- }
+body {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-black;
+}
 
- .heading {
-   &,
-   &:link,
-   &:visited {
+.heading {
+  &,
+  &:link,
+  &:visited {
     font-family: $font-heading;
     margin-bottom: $margin-bottom-s;
     text-decoration: none;
   }
-     &--primary{
-       font-size: 3rem;
-       font-weight: 700;
-       letter-spacing: 0.1rem;
-       text-align: center;
-       color: $color-green-dark-1;
-       cursor: pointer;   
-     }
-
-     &--secondary{
-      font-size: 2rem;
-      font-weight: 500;
-      color: $color-grey-dark-1;
-      letter-spacing: 0.1rem;
-    }
-
-    &--main{
-      text-transform: uppercase;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: $color-green-dark-1;
-      margin-bottom: $margin-bottom-l;
-    }
-
-    &--eventslist{
-      text-transform: uppercase;
-      font-size: 2.1rem;
-      font-weight: 500;
-      color: $color-green-dark-1;
-      letter-spacing: 0.2rem;
-    }
-
-    &--loginfeedback {
-      background-color: $color-blue-green-2;
-      color: $color-grey-light-1;
-      border-radius: 1.5rem;
-      font-size: 3rem;
-      width: fit-content;
-      padding: 0.8rem;
-      text-align: center;
-    }
-
-    &--home-subtitle {
-      font-size: 2rem;
-      font-weight: 400;
-      font-style: italic;
-      color: $color-grey-dark-2;
-    }
-   
- }
-
- .paragraph {
-   font-family: $font-paragraph;
-   font-size : $default-font-size;
-   font-weight: 400;
-   line-height: 1.7;
-   color: $color-black;
-   &--header {
+  &--primary {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
     text-align: center;
-   }
- }
+    color: $color-green-dark-1;
+    cursor: pointer;
+  }
+
+  &--secondary {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-grey-dark-1;
+    letter-spacing: 0.1rem;
+  }
+
+  &--main {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $color-green-dark-1;
+    margin-bottom: $margin-bottom-l;
+  }
+
+  &--eventslist {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: $color-green-dark-1;
+    letter-spacing: 0.2rem;
+  }
+
+  &--loginfeedback {
+    background-color: $color-blue-green-2;
+    color: $color-grey-light-1;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    width: fit-content;
+    padding: 0.8rem;
+    text-align: center;
+    @include absoluteCenter;
+  }
+
+  &--home-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: $color-grey-dark-2;
+  }
+}
+
+.paragraph {
+  font-family: $font-paragraph;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-black;
+  &--header {
+    text-align: center;
+  }
+}
 
 .textarea {
-   resize: none;
+  resize: none;
 }

@@ -1,5 +1,5 @@
 .backdrop {
   @include backdrop;
-  background: rgba($color-black, 0.4);
+  background: rgba($color-grey-dark-1, 0.3);
   z-index: 100;
 }

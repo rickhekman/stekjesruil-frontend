@@ -18,21 +18,25 @@ default browser font is 16px
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-  background-color: $color-grey-light-1; 
+  background-color: $color-grey-light-1;
   height: 100%;
 }
 
 body {
-   height: 100%;
+  height: 100%;
 }
 
 .container {
   position: relative;
   min-height: 100vh;
-  
+
   display: grid;
   grid-template-rows: 12vh repeat(2, min-content);
-  grid-template-columns: [navigation-start] 6rem [navigation-end full-start] 1fr [center-start] repeat(8,
-  [col-start] minmax(min-content, 14rem) [col-end])[center-end] 1fr [full-end];
+  grid-template-columns:
+    [navigation-start] 6rem [navigation-end full-start] 1fr [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] 1fr [full-end];
   height: 100%;
 }

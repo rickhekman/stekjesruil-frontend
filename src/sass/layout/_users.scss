@@ -4,6 +4,7 @@
 }
 
 .signupcontainer {
+  @include absoluteCenter;
   background-image: linear-gradient(
       rgba($color-white, 0.91) 0%,
       rgba($color-white, 0.91) 65%,
@@ -23,6 +24,7 @@
 }
 
 .logincontainer {
+  @include absoluteCenter;
   background-image: linear-gradient(
       rgba($color-white, 0.9) 0%,
       rgba($color-white, 0.9) 55%,

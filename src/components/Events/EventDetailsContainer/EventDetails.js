@@ -78,11 +78,8 @@ function EventDetails(props) {
             <div className="eventdetails__fb-event" onClick={props.onClick}>
               <img src={'../images/icons/fb-box-fill.svg'} alt="icon" /><p className="paragraph">{t('event.fb')}</p>
             </div>
-
-            <img src={'../images/icons/trashcan.svg'} type="button" onClick={props.onDelete} className="eventdetails__delete" alt="delete icon" />
-
+            {/* <img src={'../images/icons/trashcan.svg'} type="button" onClick={props.onDelete} className="eventdetails__delete" alt="delete icon" /> */}
           </div>
-
         </div>
         : 'Event details are loading...'
       }

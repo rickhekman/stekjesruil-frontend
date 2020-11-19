@@ -128,7 +128,7 @@ body {
   margin-top: 8rem !important; }
 
 .backdrop {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -414,8 +414,8 @@ body {
     border-radius: 0.5rem; }
   .event__photo {
     border-radius: 0.5rem 0.5rem 0 0;
-    height: auto;
     width: 100%;
+    height: auto;
     margin-top: 0rem; }
   .event__date {
     font-size: 1.7rem;
@@ -431,7 +431,7 @@ body {
   grid-column: eventsform-col-start 3 / eventsform-col-start 7; }
 
 .eventpopup {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -566,9 +566,10 @@ body {
   grid-row: 4 / 4;
   align-self: start;
   justify-self: end;
+  width: 33rem;
+  height: 18rem;
   margin-left: 2rem;
-  width: 31rem;
-  height: 18rem; }
+  margin-bottom: 1rem; }
 
 .footer {
   background-color: #fafafa;
@@ -728,7 +729,7 @@ body {
   grid-column: content-start / content-end; }
   .slider-content__media {
     width: auto;
-    height: 77rem;
+    height: 100%;
     justify-self: center;
     align-self: center;
     cursor: pointer; }

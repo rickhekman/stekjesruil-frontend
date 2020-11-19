@@ -46,8 +46,8 @@
 
   &__photo {
     border-radius: 0.5rem 0.5rem 0 0;
-    height: auto;
     width: 100%;
+    height: auto;
     margin-top: 0rem;
   }
 
@@ -238,7 +238,8 @@
   grid-row: 4 / 4;
   align-self: start;
   justify-self: end;
-  margin-left: 2rem;
-  width: 31rem;
+  width: 33rem;
   height: 18rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }

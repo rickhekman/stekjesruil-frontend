@@ -1,28 +1,28 @@
 .cuttings {
   grid-column: maincol-start 1 / maincol-end 8;
-  background-color: $color-grey-light-1;  
+  background-color: $color-grey-light-1;
 
-  &--list{
+  &--list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem 4rem;
     margin: 1rem;
 
-     &__button {
+    &__button {
       background-color: $color-grey-light-1;
       margin: 1rem;
-      grid-column: 4 /  5;
+      grid-column: 4 / 5;
       justify-self: right;
       align-self: end;
-  }
+    }
   }
 }
 
 .cutting {
   padding: 1rem 3rem;
-  box-shadow: 0 0.3rem 0.5rem rgba($color-black, .10);
+  box-shadow: 0 0.3rem 0.5rem rgba($color-black, 0.1);
   border-radius: 1rem;
-  background-color: $color-grey-light-2; 
+  background-color: $color-grey-light-2;
   &--name {
     font-size: 1.6rem;
     color: $color-grey-dark-3;
@@ -34,7 +34,7 @@
     margin-top: 1rem;
   }
   &:hover {
-    background-color: rgba($color-green-light-4, .10);
+    background-color: rgba($color-green-light-4, 0.1);
     transform: translateY(-2px);
   }
 }
@@ -44,69 +44,72 @@
   grid-template-rows: repeat(4, min-content);
   grid-template-columns: repeat(8, 1fr);
 
-  &__title{
+  &__title {
     grid-column: 3 / 7;
-    grid-row: 3 / 4 ;
+    grid-row: 3 / 4;
     justify-self: center;
     font-size: 1.5rem;
     color: $color-grey-dark-1;
     margin-top: 1rem;
     justify-self: left;
     padding-left: 4.5rem;
-    
   }
 
   &__photo {
-     grid-column: 3 / 7;
-     grid-row: 1 / 2 ;
-     height: auto;
-     width: 45rem;
-     justify-self: center;
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+    height: auto;
+    width: 45rem;
+    justify-self: center;
   }
 
   &__description {
-      grid-column: 3 / 7;
-      grid-row: 4 / 4 ;
-      font-size: 1.4rem;
-      margin-top: 4rem;
-      padding: 1.2rem 1.5rem 3rem 1.5rem;
-      margin-bottom: 2rem;
-      justify-self: center;
-      align-self: center;
-      border-top: 1px dotted rgba($color-green-dark-1, .50);
-      background-color: rgba($color-green-light-3, .10);
-      
+    grid-column: 3 / 7;
+    grid-row: 4 / 4;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    padding: 1.2rem 1.5rem 3rem 1.5rem;
+    margin-bottom: 2rem;
+    justify-self: center;
+    align-self: center;
+    border-top: 1px dotted rgba($color-green-dark-1, 0.5);
+    background-color: rgba($color-green-light-3, 0.1);
   }
 
-  &__delete-button{
-  grid-column: 8 / 8;
-  grid-row: 5 / 5 ;
+  &__delete-button {
+    grid-column: 8 / 8;
+    grid-row: 5 / 5;
   }
-  
 }
 
 .cuttingsform-container {
+  @include absoluteCenter;
   display: grid;
-  grid-template-columns: [cuttingsform-start] 1fr repeat(8, [cuttingsform-col-start] minmax(min-content, 14rem) [cuttingsform-col-end]) 1fr [cuttingsform-end];
+  grid-template-columns: [cuttingsform-start] 1fr repeat(
+      8,
+      [cuttingsform-col-start] minmax(min-content, 14rem) [cuttingsform-col-end]
+    ) 1fr [cuttingsform-end];
 }
- 
+
 .cuttingsform {
   grid-column: cuttingsform-col-start 3 / cuttingsform-col-start 7;
 }
 
 .createcuttings {
-  background-image: linear-gradient(rgba($color-white, .85) 0%, 
-                                    rgba($color-white, .85) 65%, 
-                                  transparent 90%),
-                                  url('../img/stekjes-01.jpg');
+  background-image: linear-gradient(
+      rgba($color-white, 0.85) 0%,
+      rgba($color-white, 0.85) 65%,
+      transparent 90%
+    ),
+    url("../img/stekjes-01.jpg");
   background-size: cover;
   border-radius: 12px;
-  box-shadow: 0 0.5rem 0.5rem rgba($color-black, .15);
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.15);
   height: 59rem;
   width: 80rem;
 
   &__form {
     height: 50%;
-    padding: 4rem  0rem  0rem  9rem;
+    padding: 4rem 0rem 0rem 9rem;
   }
 }

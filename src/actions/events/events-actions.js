@@ -1,15 +1,35 @@
 import axios from '../../axios'
 
 export const CREATE_EVENT = 'CREATE_EVENT'
-export const ALL_EVENTS = 'ALL_EVENTS'
-export const ONE_EVENT = 'ONE_EVENT'
+export const LOAD_ALL_EVENTS = 'LOAD_ALL_EVENTS'
+export const EVENT_DETAILS = 'EVENT_DETAILS'
 export const DELETE_EVENT = 'DELETE_EVENT'
 
-// Create an event
 export function eventCreate(event) {
   return {
     type: CREATE_EVENT,
-    payload: event
+    event
+  }
+}
+
+export function loadAllEvents(events) {
+  return {
+    type: LOAD_ALL_EVENTS,
+    events
+  }
+}
+
+export function eventDetails(event) {
+  return {
+    type: EVENT_DETAILS,
+    event
+  }
+}
+
+export function deleteEventSucces(event) {
+  return {
+    type: DELETE_EVENT,
+    event
   }
 }
 
@@ -38,14 +58,6 @@ export function createEvent(newEventData) {
   }
 }
 
-// Read all events
-export function allEvents(events) {
-  return {
-    type: ALL_EVENTS,
-    payload: events
-  }
-}
-
 export function getAllEvents() {
   return async function (dispatch) {
     try {
@@ -54,20 +66,12 @@ export function getAllEvents() {
         .get(`/events`)
 
       const { data } = response
-      const action = allEvents(data)
+      const action = loadAllEvents(data)
       dispatch(action)
 
     } catch (error) {
       throw error
     }
-  }
-}
-
-// Read one event
-export function oneEvent(event) {
-  return {
-    type: ONE_EVENT,
-    payload: event
   }
 }
 
@@ -78,19 +82,11 @@ export function loadEvent(id) {
       const response = await axios
         .get(`/events/${id}`)
 
-      dispatch(oneEvent(response.data))
+      dispatch(eventDetails(response.data))
 
     } catch (error) {
       throw error
     }
-  }
-}
-
-// Delete an event
-export function deleteEventSucces(event) {
-  return {
-    type: DELETE_EVENT,
-    payload: event
   }
 }
 

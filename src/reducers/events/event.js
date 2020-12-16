@@ -1,7 +1,9 @@
+import { EVENT_DETAILS } from "../../actions/events/events-actions";
+
 function reducer(state = null, action) {
   switch (action.type) {
-    case 'ONE_EVENT':
-      return action.payload
+    case EVENT_DETAILS:
+      return action.event
     default:
       return state
   }

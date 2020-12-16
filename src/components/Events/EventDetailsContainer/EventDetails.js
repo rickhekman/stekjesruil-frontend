@@ -19,7 +19,6 @@ function EventDetails(props) {
 
           <div className="eventdetails">
 
-
             <Link to={`/events/`}
               style={{
                 textDecoration: 'none'

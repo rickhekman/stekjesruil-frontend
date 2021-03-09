@@ -30,11 +30,11 @@ function SideDrawer(props) {
               {t('navigation.about')}
             </Link>
           </li>
-          {/* <li className="navigation__item" onClick={props.click}>
+          <li className="navigation__item" onClick={props.click}>
             <Link to="/signup/" style={{ textDecoration: 'none' }} className="navigation__link">
               {t('navigation.signup')}
             </Link>
-          </li> */}
+          </li>
           <li className="navigation__item" onClick={props.click}>
             <Link to="/login/" style={{ textDecoration: 'none' }} className="navigation__link">
               {t('navigation.login')}

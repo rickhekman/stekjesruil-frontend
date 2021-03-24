@@ -24,9 +24,9 @@ function CuttingsList(props) {
         : 'Loading cuttings...'
       }
 
-      <div className="cuttings--list__button">
+      {/* <div className="cuttings--list__button">
         <Link to={`/create-cutting/`}><button className="btn btn--form-blue">{t('cutting.create')}</button></Link>
-      </div>
+      </div> */}
     </div>
 
 

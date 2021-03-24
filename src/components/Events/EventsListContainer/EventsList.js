@@ -25,11 +25,9 @@ function EventsList(props) {
         )
         : 'Loading events...'
       }
-
       {/* <div className="events__button">
         <Link to="/create-event/"><button className="btn btn--form-blue">Create event</button></Link>
       </div> */}
-
     </div>
   )
 }

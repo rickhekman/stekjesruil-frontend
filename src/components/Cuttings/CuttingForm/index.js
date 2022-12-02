@@ -27,7 +27,7 @@ function CuttingForm(props) {
           <form onSubmit={onSubmit} className="form" >
 
             <div className="form__group">
-              <label for="name" className="form__label">{t('cutting-form.name')} </label>
+              <label htmlFor="name" className="form__label">{t('cutting-form.name')} </label>
               <input
                 className="form__input"
                 id="name"
@@ -41,7 +41,7 @@ function CuttingForm(props) {
             </div>
 
             <div className="form__group">
-              <label for="photo" className="form__label">{t('cutting-form.photo')} </label>
+              <label htmlFor="photo" className="form__label">{t('cutting-form.photo')} </label>
               <input
                 className="form__input"
                 id="photo"
@@ -54,7 +54,7 @@ function CuttingForm(props) {
             </div>
 
             <div className="form__group">
-              <label for="description" className="form__label">{t('cutting-form.description')} </label>
+              <label htmlFor="description" className="form__label">{t('cutting-form.description')} </label>
               <textarea
                 className="form__input"
                 id="photo"

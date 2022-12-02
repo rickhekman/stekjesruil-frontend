@@ -35,7 +35,7 @@ function EventForm(props) {
       <form onSubmit={onSubmit} className="form">
 
         <div className="form__group">
-          <label for="title" className="form__label">Title </label>
+          <label htmlFor="title" className="form__label">Title </label>
           <input
             className="form__input"
             id="title"
@@ -49,7 +49,7 @@ function EventForm(props) {
         </div>
 
         <div className="form__group">
-          <label for="photo" className="form__label">Photo </label>
+          <label htmlFor="photo" className="form__label">Photo </label>
           <input
             className="form__input"
             id="photo"
@@ -62,7 +62,7 @@ function EventForm(props) {
         </div>
 
         <div className="form__group">
-          <label for="date-start" className="form__label">Start </label>
+          <label htmlFor="date-start" className="form__label">Start </label>
           <input
             className="form__input"
             id="date-start"
@@ -73,7 +73,7 @@ function EventForm(props) {
             value={startdate}
             required
           />
-          <label for="date-end" className="form__label">End </label>
+          <label htmlFor="date-end" className="form__label">End </label>
           <input
             className="form__input"
             id="date-end"
@@ -86,7 +86,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="description" className="form__label">Description </label>
+          <label htmlFor="description" className="form__label">Description </label>
           <textarea
             className="form__input"
             id="description"
@@ -99,7 +99,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="website" className="form__label">Location website </label>
+          <label htmlFor="website" className="form__label">Location website </label>
           <input
             className="form__input"
             id="website"
@@ -112,7 +112,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="location-name" className="form__label">Location name </label>
+          <label htmlFor="location-name" className="form__label">Location name </label>
           <input
             className="form__input"
             id="location-name"
@@ -125,7 +125,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="address1" className="form__label">Location address 1 </label>
+          <label htmlFor="address1" className="form__label">Location address 1 </label>
           <input
             className="form__input"
             id="address1"
@@ -138,7 +138,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="address2" className="form__label">Location address 2 </label>
+          <label htmlFor="address2" className="form__label">Location address 2 </label>
           <input
             className="form__input"
             id="address2"
@@ -150,7 +150,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="zip" className="form__label">Zip code </label>
+          <label htmlFor="zip" className="form__label">Zip code </label>
           <input
             className="form__input"
             id="zip"
@@ -163,7 +163,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="city" className="form__label">City </label>
+          <label htmlFor="city" className="form__label">City </label>
           <input
             className="form__input"
             id="title"
@@ -176,7 +176,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="country" className="form__label">Country </label>
+          <label htmlFor="country" className="form__label">Country </label>
           <input
             className="form__input"
             id="country"
@@ -188,7 +188,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="latitude" className="form__label">Location latitude </label>
+          <label htmlFor="latitude" className="form__label">Location latitude </label>
           <input
             className="form__input"
             id="latitude"
@@ -201,7 +201,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="longitude" className="form__label">Location longitude </label>
+          <label htmlFor="longitude" className="form__label">Location longitude </label>
           <input
             className="form__input"
             id="longitude"
@@ -214,7 +214,7 @@ function EventForm(props) {
           />
         </div>
         <div className="form__group">
-          <label for="fb-event" className="form__label">Facebook event </label>
+          <label htmlFor="fb-event" className="form__label">Facebook event </label>
           <input
             className="form__input"
             id="fb-event"

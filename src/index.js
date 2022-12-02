@@ -1,11 +1,13 @@
 import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import {createRoot} from "react-dom/client";
+import { BrowserRouter} from 'react-router-dom';
 import './index.css';
 import './i18n'
 import App from './App';
 import { Provider } from 'react-redux'
-import store from './store'
+import store from './store';
+
+const root = createRoot(document.getElementById("root"));
 
 const Loader = () => (
 
@@ -13,7 +15,7 @@ const Loader = () => (
 
 );
 
-ReactDOM.render(
+root.render(
   <Provider store={store}>
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
@@ -21,4 +23,4 @@ ReactDOM.render(
       </BrowserRouter>
     </Suspense>
   </Provider>
-  , document.getElementById('root'));
+  );

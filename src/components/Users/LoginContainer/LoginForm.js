@@ -23,7 +23,7 @@ function LoginForm(props) {
       <form onSubmit={onSubmit} className="form">
 
         <div className="form__group">
-          <label for="email" className="form__label">{t('login-form.email')} </label>
+          <label htmlFor="email" className="form__label">{t('login-form.email')} </label>
           <input
             className="form__input"
             id="email"
@@ -37,7 +37,7 @@ function LoginForm(props) {
         </div>
 
         <div className="form__group">
-          <label for="password" className="form__label">{t('login-form.password')} </label>
+          <label htmlFor="password" className="form__label">{t('login-form.password')} </label>
           <input
             className="form__input"
             id="password"

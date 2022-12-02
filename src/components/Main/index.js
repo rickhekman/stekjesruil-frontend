@@ -18,42 +18,38 @@ function Main() {
 
       <div className="home">
         <Routes>
-          <Route path="/" exact component={Home} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
 
       <div className="events">
         <Routes>
-          <Route path="/events/" exact component={Events} />
-
-          <Route path="/events/:id" exact component={EventDetails} />
-
-          <Route path="/create-event/" exact component={CreateEventContainer} />
+          <Route path="/events/" element={<Events />} />
+          <Route path="/events/:id"  element={<EventDetails />} />
+          <Route path="/create-event/"  element={<CreateEventContainer />} />
         </Routes>
       </div>
 
       <div className="cuttings">
         <Routes>
-          <Route path="/cuttings/" exact component={Cuttings} />
-          <Route path="/cuttings/:id" exact component={CuttingDetails} />
-          <Route path="/create-cutting/" exact component={CreateCutting} />
+          <Route path="/cuttings/"  element={<Cuttings />} />
+          <Route path="/cuttings/:id" element={<CuttingDetails />} />
+          <Route path="/create-cutting/" element={<CreateCutting />} />
         </Routes>
       </div>
 
       <div className="about">
         <Routes>
-          <Route path="/about/" exact component={About} />
+          <Route path="/about/" element={<About />} />
         </Routes>
       </div>
 
       <div className="users">
         <Routes>
-          <Route path="/signup/" exact component={SignupContainer} />
-          <Route path="/login/" exact component={LoginContainer} />
+          <Route path="/signup/" element={<SignupContainer />} />
+          <Route path="/login/"  element={<LoginContainer />} />
         </Routes>
       </div>
-
-
     </div>
   )
 }

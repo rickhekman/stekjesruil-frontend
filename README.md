@@ -11,7 +11,7 @@
 
 This is a web application for cuttings swapping.<br />
 Users will be able to attend events, swap plant cuttings, share ideas and meet up.<br />
-A preview of the Stekjesruil website can be found **[here](https://stekjesruil.netlify.app/).** <br />
+
 ![website preview](public/images/preview.jpg)<br />
 [Here you can find](https://github.com/rickhekman/stekjesruil-backend "backend") the backend code of the app.
 
